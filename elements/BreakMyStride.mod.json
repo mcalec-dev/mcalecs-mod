@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "break_my_stride",
+    "description": "Matthew Wilder - Break My Stride",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:matthew-wilder_break-my-stride"
+    },
+    "lengthInTicks": 3840,
+    "analogOutput": 11
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "fivenightsatfreddys",
+    "description": "The Newton Brothers - Five Nights at Freddy's - FNAF Movie Opening",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:the-newton-brothers_five-nights-at-freddys_fnaf-movie"
+    },
+    "lengthInTicks": 3040,
+    "analogOutput": 8
+  }
+}

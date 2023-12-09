@@ -1,0 +1,120 @@
+{
+  "_fv": 47,
+  "_type": "biome",
+  "definition": {
+    "name": "McAlecs Biome",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.GRAVEL"
+    },
+    "grassColor": {
+      "value": -10385137,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -12029666,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16737895,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -16751002,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:nintendo_rosalina-in-the-observatory-3_smg"
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 2566,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "SNOWFLAKE"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 0.7000000000000001,
+    "temperature": 0.5,
+    "spawnBiome": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": 0.5,
+      "max": 1.0
+    },
+    "genHumidity": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "genContinentalness": {
+      "min": -1.0,
+      "max": 0.0
+    },
+    "genErosion": {
+      "min": -1.0,
+      "max": 0.0
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 0.25
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 3,
+    "treeStem": {
+      "value": "Blocks.LOG#0"
+    },
+    "treeBranch": {
+      "value": "Blocks.LEAVES#0"
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "MonsterRooms",
+      "ExtraGoldOre",
+      "AmethystGeodes",
+      "ForestGrass"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "plains",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "STANDARD",
+    "spawnEntries": []
+  }
+}

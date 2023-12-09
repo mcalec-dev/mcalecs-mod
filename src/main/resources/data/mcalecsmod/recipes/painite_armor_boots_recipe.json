@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "mcalecsmod:painite"
+    },
+    "2": {
+      "item": "mcalecsmod:painite"
+    },
+    "3": {
+      "item": "mcalecsmod:painite"
+    },
+    "5": {
+      "item": "mcalecsmod:painite"
+    }
+  },
+  "result": {
+    "item": "mcalecsmod:painite_armor_boots",
+    "count": 1
+  }
+}

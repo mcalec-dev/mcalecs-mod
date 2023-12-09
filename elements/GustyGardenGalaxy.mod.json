@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "gustygardengalaxy",
+    "description": "Nintendo - Gusty Garden Galaxy - Super Mario Galaxy",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:nintendo_gusty-garden-galaxy"
+    },
+    "lengthInTicks": 5760,
+    "analogOutput": 2
+  }
+}

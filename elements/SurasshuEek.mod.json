@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "surasshu_eek",
+    "description": "Surasshu - Eek!",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:surasshu-eek"
+    },
+    "lengthInTicks": 1920,
+    "analogOutput": 10
+  }
+}

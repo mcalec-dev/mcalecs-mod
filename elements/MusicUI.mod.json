@@ -1,0 +1,79 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 333,
+    "height": 218,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_stop_all_sounds",
+          "text": "Stop All Sounds",
+          "onClick": {
+            "name": "MusicUIStopAllSounds"
+          },
+          "width": 103,
+          "height": 20,
+          "x": 269,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_music_ui",
+          "text": {
+            "fixedValue": "Music UI"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 53,
+          "y": 16
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_stops_all_record_sounds_by_the_p",
+          "text": {
+            "fixedValue": "Stops all record sounds by the player."
+          },
+          "width": 24,
+          "height": 24,
+          "x": 245,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 253,
+          "y": 206
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 8,
+      "sy": 10,
+      "ox": 8,
+      "oy": 10,
+      "snapOnGrid": true
+    }
+  }
+}

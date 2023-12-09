@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "tltfivenightsatfreddys",
+    "description": "The Living Tombstone - Five Nights at Freddy's - FNAF 1 Song",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:tlt_five-nights-at-freddys"
+    },
+    "lengthInTicks": 4280,
+    "analogOutput": 9
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "jumpupsuperstarsmo",
+    "description": "Nintendo - Jump Up, Super Star! - Super Mario Odyssey",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:nintendo_jump-up-super-star"
+    },
+    "lengthInTicks": 5200,
+    "analogOutput": 6
+  }
+}

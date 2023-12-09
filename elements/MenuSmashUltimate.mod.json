@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "menusmashultimate",
+    "description": "Nintendo - Menu 1 - Super Smash Bros Ultimate",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:nintendo_menu-1-ssbu"
+    },
+    "lengthInTicks": 4000,
+    "analogOutput": 3
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "ed-helms_how-bad-can-i-be": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:ed-helms_how-bad-can-i-be",
+        "stream": true
+      }
+    ]
+  },
+  "boykisser-meow": {
+    "subtitle": "subtitles.boykisser-meow",
+    "sounds": [
+      {
+        "name": "mcalecsmod:boykisser-meow",
+        "stream": false
+      }
+    ]
+  },
+  "groovydominoes52_bee": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:groovydominoes52_bee",
+        "stream": true
+      }
+    ]
+  },
+  "c418_dragon-fish": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:c418_dragon-fish",
+        "stream": true
+      }
+    ]
+  },
+  "nintendo_gusty-garden-galaxy": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:nintendo_gusty-garden-galaxy",
+        "stream": true
+      }
+    ]
+  },
+  "nintendo_jump-up-super-star": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:nintendo_jump-up-super-star",
+        "stream": true
+      }
+    ]
+  },
+  "nintendo_menu-1-ssbu": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:nintendo_menu-1-ssbu",
+        "stream": true
+      }
+    ]
+  },
+  "ice-spice_munch": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:ice-spice_munch",
+        "stream": true
+      }
+    ]
+  },
+  "nintendo_rosalina-in-the-observatory-3_smg": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:nintendo_rosalina-in-the-observatory-3_smg",
+        "stream": true
+      }
+    ]
+  },
+  "the-newton-brothers_five-nights-at-freddys_fnaf-movie": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:the-newton-brothers_five-nights-at-freddys_fnaf-movie",
+        "stream": true
+      }
+    ]
+  },
+  "tlt_five-nights-at-freddys": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:tlt_five-nights-at-freddys",
+        "stream": true
+      }
+    ]
+  },
+  "surasshu-eek": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:surasshu-eek",
+        "stream": true
+      }
+    ]
+  },
+  "matthew-wilder_break-my-stride": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:matthew-wilder_break-my-stride",
+        "stream": true
+      }
+    ]
+  }
+}

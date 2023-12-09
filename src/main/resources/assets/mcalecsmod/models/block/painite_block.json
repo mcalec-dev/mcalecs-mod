@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mcalecsmod:block/painite_ore_block",
+    "particle": "mcalecsmod:block/painite_ore_block"
+  },
+  "render_type": "solid"
+}

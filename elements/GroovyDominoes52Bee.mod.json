@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "groovydominoes52bee",
+    "description": "GroovyDominoes52 - Bee.",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:groovydominoes52_bee"
+    },
+    "lengthInTicks": 1440,
+    "analogOutput": 7
+  }
+}

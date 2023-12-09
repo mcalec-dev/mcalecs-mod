@@ -1,0 +1,98 @@
+plugins {
+    id 'eclipse'
+    id 'net.minecraftforge.gradle' version '[6.0,16)'
+}
+
+version = '0.06a'
+group = 'net.mcalec.mcalecsmod'
+archivesBaseName = 'mcalecsmod'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                mcalecsmod {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                mcalecsmod {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+repositories {
+	// Mod Location
+    flatDir {
+        dirs 'libs'
+    }
+
+    maven {
+		// CurseForge maven
+		name = "CurseForge Maven"
+        url = "https://cursemaven.com"
+    }
+
+    maven {
+        // location of the maven that hosts JEI files
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+    
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0' // Forge 1.20.1 (47.2.0)
+    implementation fg.deobf("curse.maven:jei-238222:4712868") // Just Enough Items (JEI) Mod
+}
+
+repositories {
+    // Other repositories can go above or below Modrinth's. We don't need priority :)
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        forRepositories(fg.repository) // Only add this if you're using ForgeGradle, otherwise remove this line
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+apply from: 'mcreator.gradle'
+

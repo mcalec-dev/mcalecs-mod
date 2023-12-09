@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "mcalecsmod:painite"
+    },
+    "1": {
+      "item": "mcalecsmod:painite"
+    },
+    "2": {
+      "item": "mcalecsmod:painite"
+    },
+    "3": {
+      "item": "mcalecsmod:painite"
+    },
+    "4": {
+      "item": "mcalecsmod:painite"
+    },
+    "5": {
+      "item": "mcalecsmod:painite"
+    },
+    "6": {
+      "item": "mcalecsmod:painite"
+    },
+    "7": {
+      "item": "mcalecsmod:painite"
+    },
+    "8": {
+      "item": "mcalecsmod:painite"
+    }
+  },
+  "result": {
+    "item": "mcalecsmod:painite_block",
+    "count": 1
+  }
+}
