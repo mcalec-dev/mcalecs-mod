@@ -118,7 +118,7 @@
           "src/main/java/net/mcalec/mcalecsmod/world/inventory/MusicUIMenu.java"
         ]
       },
-      "path": "~/MusicUI/Music UI"
+      "path": "~/Music UI"
     },
     {
       "name": "MusicUIkeybindOnKeyReleased",
@@ -154,7 +154,7 @@
           }
         ]
       },
-      "path": "~/MusicUI/Music UI"
+      "path": "~/Music UI"
     },
     {
       "name": "MusicUIkeybind",
@@ -168,7 +168,7 @@
           "src/main/java/net/mcalec/mcalecsmod/network/MusicUIkeybindMessage.java"
         ]
       },
-      "path": "~/MusicUI/Music UI"
+      "path": "~/Music UI"
     },
     {
       "name": "McAlecPerson",
@@ -763,7 +763,7 @@
           }
         ]
       },
-      "path": "~/MusicUI/Music UI"
+      "path": "~/Music UI"
     },
     {
       "name": "BreakMyStride",
@@ -1126,15 +1126,6 @@
     "name": "~",
     "children": [
       {
-        "name": "MusicUI",
-        "children": [
-          {
-            "name": "Music UI",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "Advanced Jukebox",
         "children": []
       },
@@ -1170,6 +1161,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Music UI",
+        "children": []
       }
     ]
   },

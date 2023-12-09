@@ -13,11 +13,7 @@
       "value": "Blocks.GRAVEL"
     },
     "grassColor": {
-      "value": -10385137,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -12029666,
+      "value": -16748737,
       "falpha": 0.0
     },
     "waterColor": {
@@ -46,7 +42,7 @@
       "value": "SNOWFLAKE"
     },
     "particlesProbability": 0.5,
-    "rainingPossibility": 0.7000000000000001,
+    "rainingPossibility": 0.76,
     "temperature": 0.5,
     "spawnBiome": true,
     "spawnInCaves": false,
@@ -95,10 +91,10 @@
       "AmethystGeodes",
       "ForestGrass"
     ],
-    "spawnStronghold": true,
+    "spawnStronghold": false,
     "spawnMineshaft": true,
     "spawnMineshaftMesa": false,
-    "spawnPillagerOutpost": true,
+    "spawnPillagerOutpost": false,
     "villageType": "plains",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
@@ -106,7 +102,7 @@
     "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
-    "spawnShipwreck": true,
+    "spawnShipwreck": false,
     "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": true,
     "oceanRuinType": "NONE",

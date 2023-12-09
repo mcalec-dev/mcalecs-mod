@@ -1,11 +1,11 @@
 {
   "has_precipitation": true,
   "temperature": 0.5,
-  "downfall": 0.7,
+  "downfall": 0.76,
   "effects": {
     "ambient_sound": "mcalecsmod:nintendo_rosalina-in-the-observatory-3_smg",
-    "foliage_color": -12029666,
-    "grass_color": -10385137,
+    "foliage_color": 10387789,
+    "grass_color": -16748737,
     "sky_color": 7972607,
     "fog_color": 12638463,
     "water_color": -16737895,

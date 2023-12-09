@@ -20,7 +20,7 @@ import net.mcalec.mcalecsmod.McalecsmodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class McalecsmodModKeyMappings {
-	public static final KeyMapping MUSIC_U_IKEYBIND = new KeyMapping("key.mcalecsmod.music_u_ikeybind", GLFW.GLFW_KEY_M, "key.categories.ui") {
+	public static final KeyMapping MUSIC_U_IKEYBIND = new KeyMapping("key.mcalecsmod.music_u_ikeybind", GLFW.GLFW_KEY_N, "key.categories.ui") {
 		private boolean isDownOld = false;
 
 		@Override
