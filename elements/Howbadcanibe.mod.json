@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc",
+    "rarity": "RARE",
     "texture": "howbadcanibe",
     "description": "Ed Helms - How Bad Can I Be - The Lorax Movie",
     "creativeTab": {
       "value": "CUSTOM:MusicDiscsTab"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
     "music": {
       "value": "CUSTOM:ed-helms_how-bad-can-i-be"
     },

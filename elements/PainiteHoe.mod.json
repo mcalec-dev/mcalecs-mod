@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "painite_hoe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Painite Hoe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:PainiteTab"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 5.0,
     "usageCount": 900,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:Painite"

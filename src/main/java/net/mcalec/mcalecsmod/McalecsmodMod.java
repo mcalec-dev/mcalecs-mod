@@ -33,7 +33,6 @@ import net.mcalec.mcalecsmod.init.McalecsmodModTabs;
 import net.mcalec.mcalecsmod.init.McalecsmodModSounds;
 import net.mcalec.mcalecsmod.init.McalecsmodModMenus;
 import net.mcalec.mcalecsmod.init.McalecsmodModItems;
-import net.mcalec.mcalecsmod.init.McalecsmodModFeatures;
 import net.mcalec.mcalecsmod.init.McalecsmodModEntities;
 import net.mcalec.mcalecsmod.init.McalecsmodModBlocks;
 import net.mcalec.mcalecsmod.init.McalecsmodModBlockEntities;
@@ -62,7 +61,6 @@ public class McalecsmodMod {
 		McalecsmodModEntities.REGISTRY.register(bus);
 
 		McalecsmodModTabs.REGISTRY.register(bus);
-		McalecsmodModFeatures.REGISTRY.register(bus);
 
 		McalecsmodModMenus.REGISTRY.register(bus);
 	}

@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc",
+    "rarity": "RARE",
     "texture": "fivenightsatfreddys",
     "description": "The Newton Brothers - Five Nights at Freddy's - FNAF Movie Opening",
     "creativeTab": {
       "value": "CUSTOM:MusicDiscsTab"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
     "music": {
       "value": "CUSTOM:the-newton-brothers_five-nights-at-freddys_fnaf-movie"
     },

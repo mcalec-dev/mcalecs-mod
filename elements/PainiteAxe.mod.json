@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "painite_axe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Painite Axe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:PainiteTab"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 23.0,
     "usageCount": 900,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:Painite"

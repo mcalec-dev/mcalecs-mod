@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc",
+    "rarity": "RARE",
     "texture": "groovydominoes52bee",
     "description": "GroovyDominoes52 - Bee.",
     "creativeTab": {
       "value": "CUSTOM:MusicDiscsTab"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
     "music": {
       "value": "CUSTOM:groovydominoes52_bee"
     },

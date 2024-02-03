@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc",
+    "rarity": "RARE",
     "texture": "rosalinaintheobservatory3",
     "description": "Nintendo - Rosalina in the Observatory 3 - Super Mario Galaxy",
     "creativeTab": {
       "value": "CUSTOM:MusicDiscsTab"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
     "music": {
       "value": "CUSTOM:nintendo_rosalina-in-the-observatory-3_smg"
     },

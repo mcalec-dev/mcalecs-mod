@@ -2,20 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "0 2",
-    "3 5"
+    "a a",
+    "a a"
   ],
   "key": {
-    "0": {
-      "item": "mcalecsmod:painite"
-    },
-    "2": {
-      "item": "mcalecsmod:painite"
-    },
-    "3": {
-      "item": "mcalecsmod:painite"
-    },
-    "5": {
+    "a": {
       "item": "mcalecsmod:painite"
     }
   },

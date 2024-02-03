@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc",
+    "rarity": "RARE",
     "texture": "break_my_stride",
     "description": "Matthew Wilder - Break My Stride",
     "creativeTab": {
       "value": "CUSTOM:MusicDiscsTab"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
     "music": {
       "value": "CUSTOM:matthew-wilder_break-my-stride"
     },

@@ -245,7 +245,6 @@
           "src/main/java/net/mcalec/mcalecsmod/block/PainiteOreBlock.java",
           "src/main/resources/data/mcalecsmod/worldgen/configured_feature/painite_ore.json",
           "src/main/resources/assets/mcalecsmod/models/item/painite_ore.json",
-          "src/main/java/net/mcalec/mcalecsmod/world/features/ores/PainiteOreFeature.java",
           "src/main/resources/data/mcalecsmod/worldgen/placed_feature/painite_ore.json",
           "src/main/resources/data/mcalecsmod/forge/biome_modifier/painite_ore_biome_modifier.json",
           "src/main/resources/assets/mcalecsmod/blockstates/painite_ore.json"
@@ -922,8 +921,8 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.boykisser-meow": "Boykisser meows",
       "item.mcalecs_mod.dragon_fish.desc": "C418 - dragon fish",
+      "subtitles.boykisser-meow": "Boykisser meows",
       "item.mcalecs_mod.painite": "Painite",
       "gui.mcalecsmod.music_ui.button_stop_all_sounds": "Stop All Sounds",
       "item.mcalecs_mod.painite_armor_helmet": "Painite Helmet",
@@ -945,8 +944,8 @@
       "item_group.mcalecs_mod.mc_alec": "McAlec",
       "item.mcalecsmod.jump_up_super_star": "Music Disc",
       "item.mcalecsmod.menu_smash_ultimate": "Music Disc",
-      "item.mcalecsmod.painite_shovel": "Painite Shovel",
       "item_group.mcalecsmod.mc_alec": "McAlecs Mod",
+      "item.mcalecsmod.painite_shovel": "Painite Shovel",
       "item.mcalecsmod.howbadcanibe": "Music Disc",
       "item.mam.newtestingdisc": "Newtestingdisc",
       "item.mam.painite_hoe": "Painite Hoe",
@@ -1009,6 +1008,7 @@
       "block.mam.oncelerjukebox": "Once-ler Jukebox",
       "item.mam.painite_armor_boots": "Painite Boots",
       "gui.mcalecsmod.music_ui.button_nintendo_menu_1": "Nintendo - Menu 1",
+      "gui.mcalecsmod.music_ui.label_empty": "?",
       "gui.mam.music_ui_2.label_music_ui_2": "Music UI 2",
       "biome.mcalecsmod.trucula_biome": "Trucula Forest",
       "item.mam.painite_armor_chestplate": "Painite Chestplate",
@@ -1136,5 +1136,5 @@
     "modElementsPackage": "net.mcalec.mcalecsmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300336712
+  "mcreatorVersion": 202300452316
 }

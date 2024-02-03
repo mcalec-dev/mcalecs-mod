@@ -39,8 +39,6 @@ import net.minecraft.network.chat.Component;
 
 import net.mcalec.mcalecsmod.init.McalecsmodModEntities;
 
-import java.util.List;
-
 public class BoykisserMaidEntity extends TamableAnimal {
 	public BoykisserMaidEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(McalecsmodModEntities.BOYKISSER_MAID.get(), world);
@@ -146,7 +144,7 @@ public class BoykisserMaidEntity extends TamableAnimal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of(Items.CAKE).contains(stack.getItem());
+		return Ingredient.of(new ItemStack(Items.CAKE)).test(stack);
 	}
 
 	public static void init() {
