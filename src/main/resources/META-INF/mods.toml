@@ -4,7 +4,7 @@ license="MIT License"
 
 [[mods]]
 modId="mcalecsmod"
-version="0.2"
+version="0.4"
 displayName="McAlecs Mod"
 displayURL="https://modrinth.com/mod/mcalecs-mod"
 logoFile="logo.png"
