@@ -3,9 +3,9 @@ loaderVersion="[47,)"
 license="MIT License"
 
 [[mods]]
-modId="mcalecsmod"
+modId="mcalecs"
 version="0.4"
-displayName="McAlecs Mod"
+displayName="McAlec's Mod"
 updateJSONURL="https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/update.json"
 displayURL="https://modrinth.com/mod/mcalecs-mod"
 logoFile="logo.png"
@@ -13,7 +13,7 @@ credits="McAlec and all other assets go to the orginal creators."
 authors="McAlec"
 description="..."
 
-[[dependencies.mcalecsmod]]
+[[dependencies.mcalecs]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"

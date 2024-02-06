@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mcalecsmod:painite_ore",
-    "mcalecsmod:painite_block"
+    "mcalecs:painite_ore",
+    "mcalecs:painite_block"
   ]
 }

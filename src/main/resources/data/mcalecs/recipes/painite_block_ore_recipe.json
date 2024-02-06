@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "mcalecs:painite_block"
+    }
+  ],
+  "result": {
+    "item": "mcalecs:painite",
+    "count": 9
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "mcalecs:painite"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcalecs:painite_sword",
+    "count": 1
+  }
+}

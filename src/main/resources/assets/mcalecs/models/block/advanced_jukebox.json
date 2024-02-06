@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mcalecs:block/jukebox-side",
+    "up": "mcalecs:block/jukebox-top",
+    "north": "mcalecs:block/jukebox-bottom",
+    "east": "mcalecs:block/jukebox-bottom",
+    "south": "mcalecs:block/jukebox-bottom",
+    "west": "mcalecs:block/jukebox-bottom",
+    "particle": "mcalecs:block/jukebox-side"
+  },
+  "render_type": "solid"
+}

@@ -6,12 +6,24 @@
     "mobLabel": "McAlec1",
     "mobModelName": "Biped",
     "mobModelTexture": "teal_and_brown.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
     },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
     "modelLayers": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelHeight": 1.95,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -60,6 +72,9 @@
     "health": 8,
     "xpAmount": 7,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },

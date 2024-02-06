@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "allmyfellas_frizk",
+    "description": "All My Fellas - Frizk",
+    "creativeTab": {
+      "value": "CUSTOM:MusicDiscsTab"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:all-my-fellas_frizk"
+    },
+    "lengthInTicks": 3240,
+    "analogOutput": 12
+  }
+}

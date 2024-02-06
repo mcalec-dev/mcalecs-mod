@@ -1,0 +1,123 @@
+{
+  "ed-helms_how-bad-can-i-be": {
+    "sounds": [
+      {
+        "name": "mcalecs:ed-helms_how-bad-can-i-be",
+        "stream": true
+      }
+    ]
+  },
+  "boykisser-meow": {
+    "subtitle": "subtitles.boykisser-meow",
+    "sounds": [
+      {
+        "name": "mcalecs:boykisser-meow",
+        "stream": false
+      }
+    ]
+  },
+  "groovydominoes52_bee": {
+    "sounds": [
+      {
+        "name": "mcalecs:groovydominoes52_bee",
+        "stream": true
+      }
+    ]
+  },
+  "c418_dragon-fish": {
+    "sounds": [
+      {
+        "name": "mcalecs:c418_dragon-fish",
+        "stream": true
+      }
+    ]
+  },
+  "nintendo_gusty-garden-galaxy": {
+    "sounds": [
+      {
+        "name": "mcalecs:nintendo_gusty-garden-galaxy",
+        "stream": true
+      }
+    ]
+  },
+  "nintendo_jump-up-super-star": {
+    "sounds": [
+      {
+        "name": "mcalecs:nintendo_jump-up-super-star",
+        "stream": true
+      }
+    ]
+  },
+  "nintendo_menu-1-ssbu": {
+    "sounds": [
+      {
+        "name": "mcalecs:nintendo_menu-1-ssbu",
+        "stream": true
+      }
+    ]
+  },
+  "ice-spice_munch": {
+    "sounds": [
+      {
+        "name": "mcalecs:ice-spice_munch",
+        "stream": true
+      }
+    ]
+  },
+  "nintendo_rosalina-in-the-observatory-3_smg": {
+    "sounds": [
+      {
+        "name": "mcalecs:nintendo_rosalina-in-the-observatory-3_smg",
+        "stream": true
+      }
+    ]
+  },
+  "the-newton-brothers_five-nights-at-freddys_fnaf-movie": {
+    "sounds": [
+      {
+        "name": "mcalecs:the-newton-brothers_five-nights-at-freddys_fnaf-movie",
+        "stream": true
+      }
+    ]
+  },
+  "tlt_five-nights-at-freddys": {
+    "sounds": [
+      {
+        "name": "mcalecs:tlt_five-nights-at-freddys",
+        "stream": true
+      }
+    ]
+  },
+  "surasshu-eek": {
+    "sounds": [
+      {
+        "name": "mcalecs:surasshu-eek",
+        "stream": true
+      }
+    ]
+  },
+  "matthew-wilder_break-my-stride": {
+    "sounds": [
+      {
+        "name": "mcalecs:matthew-wilder_break-my-stride",
+        "stream": true
+      }
+    ]
+  },
+  "jamiroquai-virtual_insanity": {
+    "sounds": [
+      {
+        "name": "mcalecs:virtual_insanity-jamiroquai",
+        "stream": true
+      }
+    ]
+  },
+  "all-my-fellas_frizk": {
+    "sounds": [
+      {
+        "name": "mcalecs:all_my_fellas-frizk",
+        "stream": true
+      }
+    ]
+  }
+}
