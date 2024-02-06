@@ -1,6 +1,6 @@
 plugins {
     id 'eclipse'
-    id 'net.minecraftforge.gradle' version '[6.0,16)'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
 version = '0.4'
@@ -22,7 +22,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                mcalecsmod {
+                mcalecs {
                     source sourceSets.main
                 }
             }
@@ -35,7 +35,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                mcalecsmod {
+                mcalecs {
                     source sourceSets.main
                 }
             }
@@ -44,15 +44,37 @@ minecraft {
 }
 
 repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://cursemaven.com"
+            }
+        }
+        filter {
+            includeGroup "curse.maven"
+        }
+    }
+}
+
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        forRepositories(fg.repository)
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+}
+
+repositories {
 	// Mod Location
     flatDir {
         dirs 'libs'
-    }
-
-    maven {
-		// CurseForge maven
-		name = "CurseForge Maven"
-        url = "https://cursemaven.com"
     }
 
     maven {
@@ -70,24 +92,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0' // Forge 1.20.1 (47.2.0)
-    implementation fg.deobf("curse.maven:jei-238222:4712868") // Just Enough Items (JEI) Mod
-}
-
-repositories {
-    // Other repositories can go above or below Modrinth's. We don't need priority :)
-    exclusiveContent {
-        forRepository {
-            maven {
-                name = "Modrinth"
-                url = "https://api.modrinth.com/maven"
-            }
-        }
-        forRepositories(fg.repository) // Only add this if you're using ForgeGradle, otherwise remove this line
-        filter {
-            includeGroup "maven.modrinth"
-        }
-    }
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0' // Forge 1.20.1 (47.2.20)
 }
 
 tasks.withType(JavaCompile).configureEach {

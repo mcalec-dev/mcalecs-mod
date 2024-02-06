@@ -75,7 +75,7 @@ public class McalecsVilagerEntity extends Villager {
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 1;
+		return super.getPassengersRidingOffset() + 0.5;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
