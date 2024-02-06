@@ -16,8 +16,10 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcalec.mcalecsmod.entity.McalecsVilagerEntity;
 import net.mcalec.mcalecsmod.entity.McAlecPersonEntity;
 import net.mcalec.mcalecsmod.entity.BoykisserMaidEntity;
+import net.mcalec.mcalecsmod.entity.BoykisserEntity;
 import net.mcalec.mcalecsmod.McalecsmodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -31,6 +33,14 @@ public class McalecsmodModEntities {
 			EntityType.Builder.<BoykisserMaidEntity>of(BoykisserMaidEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoykisserMaidEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<McalecsVilagerEntity>> MCALECS_VILAGER = register("mcalecs_vilager",
+			EntityType.Builder.<McalecsVilagerEntity>of(McalecsVilagerEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(McalecsVilagerEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BoykisserEntity>> BOYKISSER = register("boykisser",
+			EntityType.Builder.<BoykisserEntity>of(BoykisserEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoykisserEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -41,6 +51,8 @@ public class McalecsmodModEntities {
 		event.enqueueWork(() -> {
 			McAlecPersonEntity.init();
 			BoykisserMaidEntity.init();
+			McalecsVilagerEntity.init();
+			BoykisserEntity.init();
 		});
 	}
 
@@ -48,5 +60,7 @@ public class McalecsmodModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MC_ALEC_PERSON.get(), McAlecPersonEntity.createAttributes().build());
 		event.put(BOYKISSER_MAID.get(), BoykisserMaidEntity.createAttributes().build());
+		event.put(MCALECS_VILAGER.get(), McalecsVilagerEntity.createAttributes().build());
+		event.put(BOYKISSER.get(), BoykisserEntity.createAttributes().build());
 	}
 }

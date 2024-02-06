@@ -9,7 +9,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcalec.mcalecsmod.client.renderer.McalecsVilagerRenderer;
 import net.mcalec.mcalecsmod.client.renderer.McAlecPersonRenderer;
+import net.mcalec.mcalecsmod.client.renderer.BoykisserRenderer;
 import net.mcalec.mcalecsmod.client.renderer.BoykisserMaidRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -18,5 +20,7 @@ public class McalecsmodModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(McalecsmodModEntities.MC_ALEC_PERSON.get(), McAlecPersonRenderer::new);
 		event.registerEntityRenderer(McalecsmodModEntities.BOYKISSER_MAID.get(), BoykisserMaidRenderer::new);
+		event.registerEntityRenderer(McalecsmodModEntities.MCALECS_VILAGER.get(), McalecsVilagerRenderer::new);
+		event.registerEntityRenderer(McalecsmodModEntities.BOYKISSER.get(), BoykisserRenderer::new);
 	}
 }

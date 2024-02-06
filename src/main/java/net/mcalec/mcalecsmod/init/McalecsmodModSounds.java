@@ -30,4 +30,5 @@ public class McalecsmodModSounds {
 	public static final RegistryObject<SoundEvent> TLT_FIVE_NIGHTS_AT_FREDDYS = REGISTRY.register("tlt_five-nights-at-freddys", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mcalecsmod", "tlt_five-nights-at-freddys")));
 	public static final RegistryObject<SoundEvent> SURASSHU_EEK = REGISTRY.register("surasshu-eek", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mcalecsmod", "surasshu-eek")));
 	public static final RegistryObject<SoundEvent> MATTHEW_WILDER_BREAK_MY_STRIDE = REGISTRY.register("matthew-wilder_break-my-stride", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mcalecsmod", "matthew-wilder_break-my-stride")));
+	public static final RegistryObject<SoundEvent> JAMIROQUAI_VIRTUAL_INSANITY = REGISTRY.register("jamiroquai-virtual_insanity", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mcalecsmod", "jamiroquai-virtual_insanity")));
 }

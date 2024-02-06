@@ -27,6 +27,8 @@ public class McalecsmodModTabs {
 				tabData.accept(McalecsmodModItems.MC_ALEC_ARMOUR_BOOTS.get());
 				tabData.accept(McalecsmodModItems.MC_ALEC_PERSON_SPAWN_EGG.get());
 				tabData.accept(McalecsmodModItems.BOYKISSER_MAID_SPAWN_EGG.get());
+				tabData.accept(McalecsmodModItems.MCALECS_VILAGER_SPAWN_EGG.get());
+				tabData.accept(McalecsmodModItems.BOYKISSER_SPAWN_EGG.get());
 			})
 
 					.build());
@@ -60,6 +62,7 @@ public class McalecsmodModTabs {
 				tabData.accept(McalecsmodModItems.TLT_FIVE_NIGHTS_AT_FREDDYS.get());
 				tabData.accept(McalecsmodModItems.SURASSHU_EEK.get());
 				tabData.accept(McalecsmodModItems.BREAK_MY_STRIDE.get());
+				tabData.accept(McalecsmodModItems.JAMIROQUAI_VIRTUAL_INSANITY.get());
 			})
 
 					.build());

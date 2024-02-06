@@ -103,5 +103,13 @@
         "stream": true
       }
     ]
+  },
+  "jamiroquai-virtual_insanity": {
+    "sounds": [
+      {
+        "name": "mcalecsmod:virtual_insanity-jamiroquai",
+        "stream": true
+      }
+    ]
   }
 }

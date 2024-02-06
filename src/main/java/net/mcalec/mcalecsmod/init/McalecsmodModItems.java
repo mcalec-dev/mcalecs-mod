@@ -26,6 +26,7 @@ import net.mcalec.mcalecsmod.item.PainiteArmorItem;
 import net.mcalec.mcalecsmod.item.MenuSmashUltimateItem;
 import net.mcalec.mcalecsmod.item.McAlecArmourItem;
 import net.mcalec.mcalecsmod.item.JumpupsuperstarItem;
+import net.mcalec.mcalecsmod.item.JamiroquaiVirtualInsanityItem;
 import net.mcalec.mcalecsmod.item.HowbadcanibeItem;
 import net.mcalec.mcalecsmod.item.GustyGardenGalaxyItem;
 import net.mcalec.mcalecsmod.item.GroovyDominoes52BeeItem;
@@ -66,6 +67,9 @@ public class McalecsmodModItems {
 	public static final RegistryObject<Item> TLT_FIVE_NIGHTS_AT_FREDDYS = REGISTRY.register("tlt_five_nights_at_freddys", () -> new TLTFiveNightsAtFreddysItem());
 	public static final RegistryObject<Item> SURASSHU_EEK = REGISTRY.register("surasshu_eek", () -> new SurasshuEekItem());
 	public static final RegistryObject<Item> BREAK_MY_STRIDE = REGISTRY.register("break_my_stride", () -> new BreakMyStrideItem());
+	public static final RegistryObject<Item> MCALECS_VILAGER_SPAWN_EGG = REGISTRY.register("mcalecs_vilager_spawn_egg", () -> new ForgeSpawnEggItem(McalecsmodModEntities.MCALECS_VILAGER, -6710887, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> JAMIROQUAI_VIRTUAL_INSANITY = REGISTRY.register("jamiroquai_virtual_insanity", () -> new JamiroquaiVirtualInsanityItem());
+	public static final RegistryObject<Item> BOYKISSER_SPAWN_EGG = REGISTRY.register("boykisser_spawn_egg", () -> new ForgeSpawnEggItem(McalecsmodModEntities.BOYKISSER, -13382401, -16724788, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
