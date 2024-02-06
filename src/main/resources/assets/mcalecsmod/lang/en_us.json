@@ -1,6 +1,6 @@
 {
-  "subtitles.boykisser-meow": "Boykisser meows",
   "item.mcalecs_mod.dragon_fish.desc": "C418 - dragon fish",
+  "subtitles.boykisser-meow": "Boykisser meows",
   "item.mcalecs_mod.painite": "Painite",
   "gui.mcalecsmod.music_ui.button_stop_all_sounds": "Stop All Sounds",
   "item.mcalecs_mod.painite_armor_helmet": "Painite Helmet",
@@ -16,8 +16,8 @@
   "item.mam.painite_shovel": "Painite Shovel",
   "item.mam.jump_up_super_star": "Music Disc",
   "item.mcalecsmod.mc_alec_armour_chestplate": "McAlec\u0027s Body",
-  "item_group.mam.painite_tab": "Painite",
   "entity.mcalecsmod.boykisser": "Boykisser",
+  "item_group.mam.painite_tab": "Painite",
   "item.mam.painite_sword": "Painite Sword",
   "biome.mcalecsmod.mcalecspecialbiome": "McAlecs Biome",
   "item_group.mcalecs_mod.mc_alec": "McAlec",
