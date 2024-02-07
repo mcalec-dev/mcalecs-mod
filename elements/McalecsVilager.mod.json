@@ -23,9 +23,9 @@
     },
     "modelLayers": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.95,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
-    "mountedYOffset": 0.5,
+    "mountedYOffset": 0.3,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -6710887,
@@ -61,16 +61,16 @@
     },
     "mobBehaviourType": "Creature",
     "mobCreatureType": "ILLAGER",
-    "attackStrength": 3,
+    "attackStrength": 0,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
-    "stepHeight": 0.6,
+    "movementSpeed": 0.5,
+    "stepHeight": 1.0,
     "armorBaseValue": 0.0,
-    "trackingRange": 64,
+    "trackingRange": 32,
     "followRange": 16,
-    "health": 10,
-    "xpAmount": 4,
+    "health": 20,
+    "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
       "fixedValue": false
@@ -80,7 +80,7 @@
     },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "inventorySize": 8,
     "inventoryStackSize": 64,
     "disableCollisions": false,
     "ridable": true,
@@ -100,7 +100,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.EMERALD"
+      "value": ""
     },
     "livingSound": {
       "value": "entity.villager.ambient"
@@ -117,7 +117,7 @@
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "Villager",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"follow_parent\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"move_indoors\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">EntityZombie</field><field name=\"radius\">6</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">EntityZombieVillager</field><field name=\"radius\">6</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">EntityHusk</field><field name=\"radius\">6</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">EntityDrowned</field><field name=\"radius\">6</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1</field><field name=\"condition\">null,null</field><next><block type=\"follow_parent\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"move_indoors\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -129,7 +129,7 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 10,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,

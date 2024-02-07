@@ -7,15 +7,19 @@ import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.monster.ZombieVillager;
+import net.minecraft.world.entity.monster.Zombie;
+import net.minecraft.world.entity.monster.Husk;
+import net.minecraft.world.entity.monster.Drowned;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.OpenDoorGoal;
 import net.minecraft.world.entity.ai.goal.MoveBackToVillageGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
@@ -41,9 +45,10 @@ public class McalecsVilagerEntity extends Villager {
 
 	public McalecsVilagerEntity(EntityType<McalecsVilagerEntity> type, Level world) {
 		super(type, world);
-		setMaxUpStep(0.6f);
-		xpReward = 4;
+		setMaxUpStep(1f);
+		xpReward = 0;
 		setNoAi(false);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -63,9 +68,13 @@ public class McalecsVilagerEntity extends Villager {
 		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(2, new FloatGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(5, new OpenDoorGoal(this, true));
-		this.goalSelector.addGoal(6, new OpenDoorGoal(this, false));
-		this.goalSelector.addGoal(7, new MoveBackToVillageGoal(this, 0.6, false));
+		this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, Zombie.class, (float) 6, 1, 1));
+		this.goalSelector.addGoal(5, new AvoidEntityGoal<>(this, ZombieVillager.class, (float) 6, 1, 1));
+		this.goalSelector.addGoal(6, new AvoidEntityGoal<>(this, Husk.class, (float) 6, 1, 1));
+		this.goalSelector.addGoal(7, new AvoidEntityGoal<>(this, Drowned.class, (float) 6, 1, 1));
+		this.goalSelector.addGoal(9, new OpenDoorGoal(this, true));
+		this.goalSelector.addGoal(10, new OpenDoorGoal(this, false));
+		this.goalSelector.addGoal(11, new MoveBackToVillageGoal(this, 0.6, false));
 	}
 
 	@Override
@@ -74,13 +83,13 @@ public class McalecsVilagerEntity extends Villager {
 	}
 
 	@Override
-	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 0.5;
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Items.EMERALD));
+	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + 0.3;
 	}
 
 	@Override
@@ -141,10 +150,10 @@ public class McalecsVilagerEntity extends Villager {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.5);
+		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
 	}

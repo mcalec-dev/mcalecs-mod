@@ -34,9 +34,9 @@ public class McalecsModEntities {
 
 					.sized(0.6f, 1.95f));
 	public static final RegistryObject<EntityType<McalecsVilagerEntity>> MCALECS_VILAGER = register("mcalecs_vilager",
-			EntityType.Builder.<McalecsVilagerEntity>of(McalecsVilagerEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(McalecsVilagerEntity::new)
+			EntityType.Builder.<McalecsVilagerEntity>of(McalecsVilagerEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(McalecsVilagerEntity::new)
 
-					.sized(0.6f, 1.95f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BoykisserEntity>> BOYKISSER = register("boykisser",
 			EntityType.Builder.<BoykisserEntity>of(BoykisserEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoykisserEntity::new)
 
