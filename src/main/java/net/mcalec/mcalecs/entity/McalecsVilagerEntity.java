@@ -89,7 +89,7 @@ public class McalecsVilagerEntity extends Villager {
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 0.3;
+		return super.getPassengersRidingOffset() + 0.4;
 	}
 
 	@Override
