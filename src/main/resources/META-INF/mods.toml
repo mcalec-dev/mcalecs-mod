@@ -4,7 +4,7 @@ license="MIT License"
 
 [[mods]]
 modId="mcalecs"
-version="0.4"
+version="0.5"
 displayName="McAlec's Mod"
 updateJSONURL="https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/update.json"
 displayURL="https://modrinth.com/mod/mcalecs-mod"

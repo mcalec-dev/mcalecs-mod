@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "c418_dragon_fish",
+    "description": "C418 - Dragon Fish",
+    "creativeTab": {
+      "value": "CUSTOM:MusicTab"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:c418_dragon_fish"
+    },
+    "lengthInTicks": 7680,
+    "analogOutput": 0
+  }
+}

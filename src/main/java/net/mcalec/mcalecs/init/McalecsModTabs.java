@@ -8,7 +8,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
@@ -20,7 +19,6 @@ public class McalecsModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, McalecsMod.MODID);
 	public static final RegistryObject<CreativeModeTab> MC_ALEC = REGISTRY.register("mc_alec",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mcalecs.mc_alec")).icon(() -> new ItemStack(Blocks.ANVIL)).displayItems((parameters, tabData) -> {
-				tabData.accept(McalecsModBlocks.ADVANCED_JUKEBOX.get().asItem());
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_HELMET.get());
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_CHESTPLATE.get());
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_LEGGINGS.get());
@@ -49,21 +47,14 @@ public class McalecsModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> MUSIC_DISCS_TAB = REGISTRY.register("music_discs_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mcalecs.music_discs_tab")).icon(() -> new ItemStack(Items.MUSIC_DISC_WAIT)).displayItems((parameters, tabData) -> {
-				tabData.accept(McalecsModItems.DRAGON_FISH.get());
-				tabData.accept(McalecsModItems.GUSTY_GARDEN_GALAXY.get());
-				tabData.accept(McalecsModItems.MENU_SMASH_ULTIMATE.get());
-				tabData.accept(McalecsModItems.ROSALINA_INTHE_OBSERVATORY_3.get());
-				tabData.accept(McalecsModItems.HOWBADCANIBE.get());
-				tabData.accept(McalecsModItems.JUMP_UP_SUPER_STAR.get());
-				tabData.accept(McalecsModItems.GROOVY_DOMINOES_52_BEE.get());
-				tabData.accept(McalecsModItems.FIVE_NIGHTS_AT_FREDDYS.get());
-				tabData.accept(McalecsModItems.TLT_FIVE_NIGHTS_AT_FREDDYS.get());
-				tabData.accept(McalecsModItems.SURASSHU_EEK.get());
-				tabData.accept(McalecsModItems.BREAK_MY_STRIDE.get());
+	public static final RegistryObject<CreativeModeTab> MUSIC_TAB = REGISTRY.register("music_tab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mcalecs.music_tab")).icon(() -> new ItemStack(McalecsModBlocks.ADVANCED_JUKEBOX.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(McalecsModBlocks.ADVANCED_JUKEBOX.get().asItem());
 				tabData.accept(McalecsModItems.JAMIROQUAI_VIRTUAL_INSANITY.get());
-				tabData.accept(McalecsModItems.ALL_MY_FELLAS_FRIZK.get());
+				tabData.accept(McalecsModItems.MATTHEW_WILDER_BREAK_MY_STRIDE.get());
+				tabData.accept(McalecsModItems.FRIZK_ALL_MY_FELLAS.get());
+				tabData.accept(McalecsModItems.ED_HELMS_HOW_BAD_CAN_I_BE.get());
+				tabData.accept(McalecsModItems.C418_DRAGON_FISH.get());
 			})
 
 					.build());

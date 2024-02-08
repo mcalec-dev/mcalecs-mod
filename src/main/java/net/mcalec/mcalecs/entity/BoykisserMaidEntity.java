@@ -29,7 +29,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.Component;
 
 import net.mcalec.mcalecs.init.McalecsModEntities;
 
@@ -43,8 +42,6 @@ public class BoykisserMaidEntity extends Animal {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(Component.literal("Boykisser"));
-		setCustomNameVisible(true);
 	}
 
 	@Override
@@ -56,8 +53,8 @@ public class BoykisserMaidEntity extends Animal {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.getNavigation().getNodeEvaluator().setCanOpenDoors(true);
-		this.goalSelector.addGoal(1, new TemptGoal(this, 0.6, Ingredient.of(Items.CAKE), true));
-		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(1, new TemptGoal(this, 0.6, Ingredient.of(Items.CAKE), false));
+		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(4, new PanicGoal(this, 1.2));
 		this.goalSelector.addGoal(5, new OpenDoorGoal(this, true));
@@ -72,17 +69,17 @@ public class BoykisserMaidEntity extends Animal {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mcalecs:boykisser-meow"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mcalecs:boykisser_meow"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cat.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cat.death"));
 	}
 
 	@Override

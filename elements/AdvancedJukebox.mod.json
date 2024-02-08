@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:McAlec"
+      "value": "CUSTOM:MusicTab"
     },
     "destroyTool": "axe",
     "customDrop": {
@@ -107,7 +107,7 @@
     "openGUIOnRightClick": false,
     "inventorySize": 0,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": false,
+    "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],

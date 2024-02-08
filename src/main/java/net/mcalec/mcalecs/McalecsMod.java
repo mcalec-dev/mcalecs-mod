@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcalec.mcalecs.init.McalecsModTabs;
 import net.mcalec.mcalecs.init.McalecsModSounds;
+import net.mcalec.mcalecs.init.McalecsModPaintings;
 import net.mcalec.mcalecs.init.McalecsModMenus;
 import net.mcalec.mcalecs.init.McalecsModItems;
 import net.mcalec.mcalecs.init.McalecsModEntities;
@@ -61,6 +62,8 @@ public class McalecsMod {
 		McalecsModEntities.REGISTRY.register(bus);
 
 		McalecsModTabs.REGISTRY.register(bus);
+
+		McalecsModPaintings.REGISTRY.register(bus);
 
 		McalecsModMenus.REGISTRY.register(bus);
 	}

@@ -1,18 +1,26 @@
 {
-  "ed-helms_how-bad-can-i-be": {
+  "boykisser_meow": {
+    "subtitle": "subtitles.boykisser_meow",
     "sounds": [
       {
-        "name": "mcalecs:ed-helms_how-bad-can-i-be",
+        "name": "mcalecs:boykisser_meow",
+        "stream": false
+      }
+    ]
+  },
+  "c418_dragon_fish": {
+    "sounds": [
+      {
+        "name": "mcalecs:c418_dragon_fish",
         "stream": true
       }
     ]
   },
-  "boykisser-meow": {
-    "subtitle": "subtitles.boykisser-meow",
+  "frizk_all_my_fellas": {
     "sounds": [
       {
-        "name": "mcalecs:boykisser-meow",
-        "stream": false
+        "name": "mcalecs:frizk_all_my_fellas",
+        "stream": true
       }
     ]
   },
@@ -24,98 +32,82 @@
       }
     ]
   },
-  "c418_dragon-fish": {
+  "matthew_wilder_break_my_stride": {
     "sounds": [
       {
-        "name": "mcalecs:c418_dragon-fish",
+        "name": "mcalecs:matthew_wilder_break_my_stride",
         "stream": true
       }
     ]
   },
-  "nintendo_gusty-garden-galaxy": {
+  "super_mario_galaxy_gusty_garden_galaxy": {
     "sounds": [
       {
-        "name": "mcalecs:nintendo_gusty-garden-galaxy",
+        "name": "mcalecs:super_mario_galaxy_gusty_garden_galaxy",
         "stream": true
       }
     ]
   },
-  "nintendo_jump-up-super-star": {
+  "super_mario_galaxy_rosalina_in_the_observatory": {
     "sounds": [
       {
-        "name": "mcalecs:nintendo_jump-up-super-star",
+        "name": "mcalecs:super_mario_galaxy_rosalina_in_the_observatory",
         "stream": true
       }
     ]
   },
-  "nintendo_menu-1-ssbu": {
+  "super_mario_odyssey_jump_up_super_star": {
     "sounds": [
       {
-        "name": "mcalecs:nintendo_menu-1-ssbu",
+        "name": "mcalecs:super_mario_odyssey_jump_up_super_star",
         "stream": true
       }
     ]
   },
-  "ice-spice_munch": {
+  "super_smash_bros_ultimate_menu": {
     "sounds": [
       {
-        "name": "mcalecs:ice-spice_munch",
+        "name": "mcalecs:super_smash_bros_ultimate_menu",
         "stream": true
       }
     ]
   },
-  "nintendo_rosalina-in-the-observatory-3_smg": {
+  "surasshu_eek": {
     "sounds": [
       {
-        "name": "mcalecs:nintendo_rosalina-in-the-observatory-3_smg",
+        "name": "mcalecs:surasshu_eek",
         "stream": true
       }
     ]
   },
-  "the-newton-brothers_five-nights-at-freddys_fnaf-movie": {
+  "the_living_tombstone_five_nights_at_freddys": {
     "sounds": [
       {
-        "name": "mcalecs:the-newton-brothers_five-nights-at-freddys_fnaf-movie",
+        "name": "mcalecs:the_living_tombstone_five_nights_at_freddys",
         "stream": true
       }
     ]
   },
-  "tlt_five-nights-at-freddys": {
+  "the_newton_brothers_five_nights_at_freddys": {
     "sounds": [
       {
-        "name": "mcalecs:tlt_five-nights-at-freddys",
+        "name": "mcalecs:the_newton_brothers_five_nights_at_freddys",
         "stream": true
       }
     ]
   },
-  "surasshu-eek": {
+  "jamiroquai_virtual_insanity": {
     "sounds": [
       {
-        "name": "mcalecs:surasshu-eek",
+        "name": "mcalecs:jamiroquai_virtual_insanity",
         "stream": true
       }
     ]
   },
-  "matthew-wilder_break-my-stride": {
+  "ed_helms_how_bad_can_i_be": {
     "sounds": [
       {
-        "name": "mcalecs:matthew-wilder_break-my-stride",
-        "stream": true
-      }
-    ]
-  },
-  "jamiroquai-virtual_insanity": {
-    "sounds": [
-      {
-        "name": "mcalecs:virtual_insanity-jamiroquai",
-        "stream": true
-      }
-    ]
-  },
-  "all-my-fellas_frizk": {
-    "sounds": [
-      {
-        "name": "mcalecs:all_my_fellas-frizk",
+        "name": "mcalecs:ed_helms_how_bad_can_i_be",
         "stream": true
       }
     ]

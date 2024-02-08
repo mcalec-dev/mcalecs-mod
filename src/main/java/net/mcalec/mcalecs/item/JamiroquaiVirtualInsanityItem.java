@@ -16,7 +16,7 @@ import java.util.List;
 
 public class JamiroquaiVirtualInsanityItem extends RecordItem {
 	public JamiroquaiVirtualInsanityItem() {
-		super(11, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mcalecs:jamiroquai-virtual_insanity")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 5760);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mcalecs:jamiroquai_virtual_insanity")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 5760);
 	}
 
 	@Override

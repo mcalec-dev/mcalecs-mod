@@ -2,9 +2,9 @@
   "_fv": 57,
   "_type": "livingentity",
   "definition": {
-    "mobName": "McAlec1",
+    "mobName": "McAlec",
     "mobLabel": "McAlec1",
-    "mobModelName": "Biped",
+    "mobModelName": "Modelcustom_model",
     "mobModelTexture": "teal_and_brown.png",
     "transparentModelCondition": {
       "fixedValue": false
@@ -16,14 +16,14 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 0.9400000000000001
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.95,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -42,34 +42,34 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "Items.IRON_SWORD"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
     },
     "equipmentHelmet": {
-      "value": "CUSTOM:McAlecArmour.helmet"
+      "value": ""
     },
     "equipmentBody": {
-      "value": "CUSTOM:McAlecArmour.body"
+      "value": ""
     },
     "equipmentLeggings": {
-      "value": "CUSTOM:McAlecArmour.legs"
+      "value": ""
     },
     "equipmentBoots": {
-      "value": "CUSTOM:McAlecArmour.boots"
+      "value": ""
     },
     "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 6,
+    "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.30000000000000004,
+    "movementSpeed": 0.3,
     "stepHeight": 0.6,
-    "armorBaseValue": 3.5,
-    "trackingRange": 64,
+    "armorBaseValue": 0.0,
+    "trackingRange": 32,
     "followRange": 16,
-    "health": 8,
+    "health": 20,
     "xpAmount": 7,
     "waterMob": false,
     "breatheUnderwater": {
@@ -88,8 +88,8 @@
     "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": true,
-    "immuneToCactus": true,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
@@ -97,13 +97,13 @@
     "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,
-    "immuneToWither": true,
-    "immuneToDragonBreath": true,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.DIAMOND"
+      "value": ""
     },
     "livingSound": {
-      "value": "entity.villager.ambient"
+      "value": ""
     },
     "hurtSound": {
       "value": "entity.generic.hurt"
@@ -117,7 +117,7 @@
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"move_indoors\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"move_indoors\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -129,7 +129,7 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 10,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,

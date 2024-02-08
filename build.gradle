@@ -3,7 +3,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-version = '0.4'
+version = '0.5'
 group = 'net.mcalec.mcalecs'
 archivesBaseName = 'mcalecs'
 
@@ -44,55 +44,39 @@ minecraft {
 }
 
 repositories {
-    exclusiveContent {
-        forRepository {
-            maven {
-                url "https://cursemaven.com"
-            }
-        }
-        filter {
-            includeGroup "curse.maven"
-        }
-    }
-}
-
-repositories {
-    exclusiveContent {
-        forRepository {
-            maven {
-                name = "Modrinth"
-                url = "https://api.modrinth.com/maven"
-            }
-        }
-        forRepositories(fg.repository)
-        filter {
-            includeGroup "maven.modrinth"
-        }
-    }
-}
-
-repositories {
 	// Mod Location
     flatDir {
         dirs 'libs'
     }
 
     maven {
-        // location of the maven that hosts JEI files
-        name = "Progwml6 maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
+    	// Curse Maven (Curseforge)
+    	name = "Curse Maven"
+        url "https://cursemaven.com"
     }
 
     maven {
-        // location of a maven mirror for JEI files, as a fallback
-        name = "ModMaven"
+    	// Modrinth Maven (Modrinth)
+    	name = "Modrinth Maven"
+        url = "https://api.modrinth.com/maven"
+    }
+
+    maven {
+        // Mod Maven
+        name = "Mod Maven"
         url = "https://modmaven.dev"
+    }
+
+    maven {
+        // JEI Maven
+        name = "Progwml6 Maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
     }
     
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0' // Forge 1.20.1 (47.2.20)
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0' // Forge 1.20.1 (47.2.0)
 }
 
 tasks.withType(JavaCompile).configureEach {

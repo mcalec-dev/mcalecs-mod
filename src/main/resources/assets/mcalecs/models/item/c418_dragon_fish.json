@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mcalecs:item/c418_dragon_fish"
+  }
+}

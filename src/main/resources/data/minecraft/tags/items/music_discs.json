@@ -1,18 +1,10 @@
 {
   "replace": false,
   "values": [
-    "mcalecs:dragon_fish",
-    "mcalecs:gusty_garden_galaxy",
-    "mcalecs:menu_smash_ultimate",
-    "mcalecs:rosalina_inthe_observatory_3",
-    "mcalecs:howbadcanibe",
-    "mcalecs:jump_up_super_star",
-    "mcalecs:groovy_dominoes_52_bee",
-    "mcalecs:five_nights_at_freddys",
-    "mcalecs:tlt_five_nights_at_freddys",
-    "mcalecs:surasshu_eek",
-    "mcalecs:break_my_stride",
     "mcalecs:jamiroquai_virtual_insanity",
-    "mcalecs:all_my_fellas_frizk"
+    "mcalecs:matthew_wilder_break_my_stride",
+    "mcalecs:frizk_all_my_fellas",
+    "mcalecs:ed_helms_how_bad_can_i_be",
+    "mcalecs:c418_dragon_fish"
   ]
 }

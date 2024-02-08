@@ -42,6 +42,7 @@ public class BoykisserEntity extends Animal {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -53,10 +54,10 @@ public class BoykisserEntity extends Animal {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.getNavigation().getNodeEvaluator().setCanOpenDoors(true);
-		this.goalSelector.addGoal(1, new TemptGoal(this, 0.6, Ingredient.of(Items.CAKE), true));
-		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(4, new PanicGoal(this, 1.2));
+		this.goalSelector.addGoal(1, new TemptGoal(this, 0.6, Ingredient.of(Items.CAKE), false));
+		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(3, new PanicGoal(this, 1.2));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new OpenDoorGoal(this, true));
 		this.goalSelector.addGoal(6, new OpenDoorGoal(this, false));
 		this.goalSelector.addGoal(7, new MoveBackToVillageGoal(this, 0.6, false));
@@ -68,23 +69,23 @@ public class BoykisserEntity extends Animal {
 	}
 
 	@Override
-	public double getMyRidingOffset() {
-		return -0.35D;
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mcalecs:boykisser-meow"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mcalecs:boykisser_meow"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cat.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cat.death"));
 	}
 
 	@Override
@@ -105,10 +106,10 @@ public class BoykisserEntity extends Animal {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
 	}
 }

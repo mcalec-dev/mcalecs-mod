@@ -29,13 +29,11 @@ public class AdvancedJukeboxParticleProcedure {
 				return false;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "hasRecord1")) == true) {
-			for (int index0 = 0; index0 < 1; index0++) {
-				McalecsMod.queueServerWork(80, () -> {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"execute run particle minecraft:note ~ ~1 ~ 0 0 0 1 1");
-				});
-			}
+			McalecsMod.queueServerWork(80, () -> {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"execute run particle minecraft:note ~ ~1 ~ 0 0 0 1 1");
+			});
 		} else {
 			if ((new Object() {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -52,13 +50,11 @@ public class AdvancedJukeboxParticleProcedure {
 					return false;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "musicPlaying")) == true) {
-				for (int index1 = 0; index1 < 1; index1++) {
-					McalecsMod.queueServerWork(80, () -> {
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"execute run particle minecraft:note ~ ~1 ~ 0 0 0 1 1");
-					});
-				}
+				McalecsMod.queueServerWork(80, () -> {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"execute run particle minecraft:note ~ ~1 ~ 0 0 0 1 1");
+				});
 			}
 		}
 	}
