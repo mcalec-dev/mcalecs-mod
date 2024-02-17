@@ -25,7 +25,7 @@ import net.mcalec.mcalecs.McalecsMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class McalecsModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, McalecsMod.MODID);
-	public static final RegistryObject<EntityType<McAlecPersonEntity>> MC_ALEC_PERSON = register("mc_alec_person",
+	public static final RegistryObject<EntityType<McAlecPersonEntity>> MCALEC = register("mcalec",
 			EntityType.Builder.<McAlecPersonEntity>of(McAlecPersonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(McAlecPersonEntity::new)
 
 					.sized(0.6f, 1.8f));
@@ -33,7 +33,7 @@ public class McalecsModEntities {
 			EntityType.Builder.<BoykisserMaidEntity>of(BoykisserMaidEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoykisserMaidEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<McalecsVilagerEntity>> MCALECS_VILAGER = register("mcalecs_vilager",
+	public static final RegistryObject<EntityType<McalecsVilagerEntity>> VILLAGER = register("villager",
 			EntityType.Builder.<McalecsVilagerEntity>of(McalecsVilagerEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(McalecsVilagerEntity::new)
 
 					.sized(0.6f, 1.95f));
@@ -58,9 +58,9 @@ public class McalecsModEntities {
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(MC_ALEC_PERSON.get(), McAlecPersonEntity.createAttributes().build());
+		event.put(MCALEC.get(), McAlecPersonEntity.createAttributes().build());
 		event.put(BOYKISSER_MAID.get(), BoykisserMaidEntity.createAttributes().build());
-		event.put(MCALECS_VILAGER.get(), McalecsVilagerEntity.createAttributes().build());
+		event.put(VILLAGER.get(), McalecsVilagerEntity.createAttributes().build());
 		event.put(BOYKISSER.get(), BoykisserEntity.createAttributes().build());
 	}
 }

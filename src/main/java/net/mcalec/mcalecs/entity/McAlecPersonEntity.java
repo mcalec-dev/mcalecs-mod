@@ -28,7 +28,7 @@ import net.mcalec.mcalecs.init.McalecsModEntities;
 
 public class McAlecPersonEntity extends PathfinderMob {
 	public McAlecPersonEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(McalecsModEntities.MC_ALEC_PERSON.get(), world);
+		this(McalecsModEntities.MCALEC.get(), world);
 	}
 
 	public McAlecPersonEntity(EntityType<McAlecPersonEntity> type, Level world) {

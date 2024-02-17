@@ -23,9 +23,9 @@ public class McalecsModTabs {
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_CHESTPLATE.get());
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_LEGGINGS.get());
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_BOOTS.get());
-				tabData.accept(McalecsModItems.MC_ALEC_PERSON_SPAWN_EGG.get());
+				tabData.accept(McalecsModItems.MCALEC_SPAWN_EGG.get());
 				tabData.accept(McalecsModItems.BOYKISSER_MAID_SPAWN_EGG.get());
-				tabData.accept(McalecsModItems.MCALECS_VILAGER_SPAWN_EGG.get());
+				tabData.accept(McalecsModItems.VILLAGER_SPAWN_EGG.get());
 				tabData.accept(McalecsModItems.BOYKISSER_SPAWN_EGG.get());
 			})
 
@@ -55,6 +55,7 @@ public class McalecsModTabs {
 				tabData.accept(McalecsModItems.FRIZK_ALL_MY_FELLAS.get());
 				tabData.accept(McalecsModItems.ED_HELMS_HOW_BAD_CAN_I_BE.get());
 				tabData.accept(McalecsModItems.C418_DRAGON_FISH.get());
+				tabData.accept(McalecsModItems.GROOVYDOMINOES52_BEE.get());
 			})
 
 					.build());

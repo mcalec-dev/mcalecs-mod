@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcalec.mcalecs.network.OpenConfigGUIMessage;
 import net.mcalec.mcalecs.network.MusicUIkeybindMessage;
 import net.mcalec.mcalecs.McalecsMod;
 
@@ -38,11 +39,25 @@ public class McalecsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping OPEN_CONFIG_GUI = new KeyMapping("key.mcalecs.open_config_gui", GLFW.GLFW_KEY_J, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				McalecsMod.PACKET_HANDLER.sendToServer(new OpenConfigGUIMessage(0, 0));
+				OpenConfigGUIMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long MUSIC_U_IKEYBIND_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(MUSIC_U_IKEYBIND);
+		event.register(OPEN_CONFIG_GUI);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -51,6 +66,7 @@ public class McalecsModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				MUSIC_U_IKEYBIND.consumeClick();
+				OPEN_CONFIG_GUI.consumeClick();
 			}
 		}
 	}

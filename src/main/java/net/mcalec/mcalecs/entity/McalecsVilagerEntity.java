@@ -10,7 +10,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.npc.Villager;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
 import net.minecraft.world.entity.ai.goal.OpenDoorGoal;
@@ -36,7 +35,7 @@ import net.mcalec.mcalecs.init.McalecsModEntities;
 
 public class McalecsVilagerEntity extends Villager {
 	public McalecsVilagerEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(McalecsModEntities.MCALECS_VILAGER.get(), world);
+		this(McalecsModEntities.VILLAGER.get(), world);
 	}
 
 	public McalecsVilagerEntity(EntityType<McalecsVilagerEntity> type, Level world) {
@@ -44,6 +43,8 @@ public class McalecsVilagerEntity extends Villager {
 		setMaxUpStep(1f);
 		xpReward = 0;
 		setNoAi(false);
+		setCustomName(Component.literal("TESTIFICATE"));
+		setCustomNameVisible(true);
 		setPersistenceRequired();
 	}
 
@@ -61,13 +62,12 @@ public class McalecsVilagerEntity extends Villager {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.getNavigation().getNodeEvaluator().setCanOpenDoors(true);
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(2, new PanicGoal(this, 1.2));
-		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(4, new FloatGoal(this));
-		this.goalSelector.addGoal(5, new OpenDoorGoal(this, true));
-		this.goalSelector.addGoal(6, new OpenDoorGoal(this, false));
-		this.goalSelector.addGoal(7, new MoveBackToVillageGoal(this, 0.6, false));
+		this.goalSelector.addGoal(1, new PanicGoal(this, 1));
+		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(3, new FloatGoal(this));
+		this.goalSelector.addGoal(4, new OpenDoorGoal(this, true));
+		this.goalSelector.addGoal(5, new OpenDoorGoal(this, false));
+		this.goalSelector.addGoal(6, new MoveBackToVillageGoal(this, 0.6, false));
 	}
 
 	@Override
@@ -143,7 +143,7 @@ public class McalecsVilagerEntity extends Villager {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.5);
 		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
