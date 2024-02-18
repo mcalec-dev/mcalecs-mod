@@ -1,11 +1,16 @@
 plugins {
     id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-version = '0.5'
+version = '0.6'
 group = 'net.mcalec.mcalecs'
-archivesBaseName = 'mcalecs'
+
+base {
+	archivesBaseName = 'mcalecs'
+}
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -81,6 +86,19 @@ dependencies {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            artifact jar
+        }
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/mcmodsrepo"
+        }
+    }
 }
 
 apply from: 'mcreator.gradle'

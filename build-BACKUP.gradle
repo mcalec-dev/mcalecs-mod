@@ -3,7 +3,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-version = '0.5'
+version = '0.6'
 group = 'net.mcalec.mcalecs'
 archivesBaseName = 'mcalecs'
 
@@ -76,7 +76,9 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0' // Forge 1.20.1 (47.2.0)
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.20' // Forge 1.20.1 (47.2.20)
+    implementation fg.deobf("curse.maven:catalogue-459701:4766090") // Catalogue Mod
+    implementation fg.deobf("curse.maven:configured-457570:5101367") // Configured Mod
 }
 
 tasks.withType(JavaCompile).configureEach {
