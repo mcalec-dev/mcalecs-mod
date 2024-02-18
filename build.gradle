@@ -7,9 +7,7 @@ plugins {
 
 version = '0.6-1.20.1'
 group = 'net.mcalec.mcalecs'
-base {
-	archivesBaseName = 'mcalecs'
-}
+archivesBaseName = 'mcalecs'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -17,7 +15,7 @@ println "build.gradle is starting!"
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 
 minecraft {
-    mappings channel: 'official', version: minecraftVersion
+    mappings channel: 'official', version: '1.20.1'
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -84,7 +82,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}' // Forge 1.20.1 (47.2.0)
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.20' // Forge 1.20.1 (47.2.20)
 
 	annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     
