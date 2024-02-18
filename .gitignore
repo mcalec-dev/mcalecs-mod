@@ -7,6 +7,7 @@ build/
 .mcreator/
 elements/
 run/
+mcalecs.mcreator
 
 # IDE's
 .classpath

@@ -725,18 +725,6 @@
       "path": "~/Music"
     },
     {
-      "name": "McAlecLogo",
-      "type": "painting",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mc_alec_logo",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/McAlec"
-    },
-    {
       "name": "EdHelmsHowBadCanIBe",
       "type": "musicdisc",
       "sortid": 66,
@@ -1015,14 +1003,12 @@
       "item.mcalecs.mcalec_spawn_egg": "McAlec Spawn Egg",
       "entity.mcalecs.villager": "Villager",
       "entity.mcalecs.boykisser_maid": "Boykisser Maid",
-      "painting.mcalecs.mc_alec_logo.author": "McAlec",
       "item.mcalecs.c418_dragon_fish.desc": "C418 - Dragon Fish",
       "item.mcalecs.mc_alec_armour_chestplate": "McAlec\u0027s Body",
       "gui.mcalecs.music_ui.tooltip_stops_all_record_sounds_by_the_p": "Stops all record sounds by the player.",
       "item.mcalecs.painite_axe": "Painite Axe",
       "item.mcalecs.c418_dragon_fish": "Music Disc",
       "item.mcalecs.boykisser_spawn_egg": "Boykisser Spawn Egg",
-      "painting.mcalecs.mc_alec_logo.title": "McAlec Logo",
       "entity.mcalecs.boykisser": "Boykisser",
       "block.mcalecs.painite_block": "Block of Painite",
       "item.mcalecs.painite": "Painite",
@@ -1097,13 +1083,16 @@
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "updateURL": "https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/update.json",
-    "modPicture": "p_small-logo",
+    "modPicture": "logo",
     "requiredMods": [],
-    "dependencies": [],
+    "dependencies": [
+      "configured",
+      "catalogue"
+    ],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
-    "credits": "McAlec and all other assets go to the orginal creators.",
+    "credits": "McAlec. I do not own/claim any music, pictures, items, or textures that may be deemed to be mine. I own all the assets I have created.",
     "modElementsPackage": "net.mcalec.mcalecs",
     "lockBaseModFiles": true
   },

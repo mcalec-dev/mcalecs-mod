@@ -9,7 +9,7 @@ displayName="McAlec's Mod"
 updateJSONURL="https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/update.json"
 displayURL="https://modrinth.com/mod/mcalecs-mod"
 logoFile="logo.png"
-credits="McAlec and all other assets go to the orginal creators."
+credits="McAlec. I do not own/claim any music, pictures, items, or textures that may be deemed to be mine. I own all the assets I have created."
 authors="McAlec"
 description="Soon..."
 
@@ -22,4 +22,16 @@ description="Soon..."
 
 
 
+[[dependencies.mcalecs]]
+    modId="configured"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.mcalecs]]
+    modId="catalogue"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
