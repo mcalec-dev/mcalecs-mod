@@ -29,6 +29,18 @@ description="Soon..."
     ordering="NONE"
     side="BOTH"
 [[dependencies.mcalecs]]
+    modId="forgeconfigapiport"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.mcalecs]]
+    modId="forgeconfigscreens"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.mcalecs]]
     modId="catalogue"
     mandatory=false
     versionRange="[0,)"

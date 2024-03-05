@@ -41,8 +41,7 @@ public class ConfigGUIScreen extends AbstractContainerScreen<ConfigGUIMenu> {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		if (ConfigRendererProcedure.execute(world) instanceof LivingEntity livingEntity) {
-			InventoryScreen.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + -186, this.topPos + -82, 30, 0f + (float) Math.atan((this.leftPos + -186 - mouseX) / 40.0), (float) Math.atan((this.topPos + -131 - mouseY) / 40.0),
-					livingEntity);
+			InventoryScreen.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + -1, this.topPos + 9, 30, 0f + (float) Math.atan((this.leftPos + -1 - mouseX) / 40.0), (float) Math.atan((this.topPos + -40 - mouseY) / 40.0), livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}

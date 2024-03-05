@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "McAlec",
     "mobLabel": "McAlec1",
-    "mobModelName": "Modelcustom_model",
+    "mobModelName": "ModelSlim",
     "mobModelTexture": "teal_and_brown.png",
     "transparentModelCondition": {
       "fixedValue": false

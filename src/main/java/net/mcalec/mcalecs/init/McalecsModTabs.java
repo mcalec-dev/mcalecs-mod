@@ -23,10 +23,10 @@ public class McalecsModTabs {
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_CHESTPLATE.get());
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_LEGGINGS.get());
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_BOOTS.get());
-				tabData.accept(McalecsModItems.MCALEC_SPAWN_EGG.get());
-				tabData.accept(McalecsModItems.BOYKISSER_MAID_SPAWN_EGG.get());
 				tabData.accept(McalecsModItems.VILLAGER_SPAWN_EGG.get());
+				tabData.accept(McalecsModItems.MCALEC_SPAWN_EGG.get());
 				tabData.accept(McalecsModItems.BOYKISSER_SPAWN_EGG.get());
+				tabData.accept(McalecsModItems.BOYKISSER_MAID_SPAWN_EGG.get());
 			})
 
 					.build());
@@ -56,6 +56,13 @@ public class McalecsModTabs {
 				tabData.accept(McalecsModItems.ED_HELMS_HOW_BAD_CAN_I_BE.get());
 				tabData.accept(McalecsModItems.C418_DRAGON_FISH.get());
 				tabData.accept(McalecsModItems.GROOVYDOMINOES52_BEE.get());
+				tabData.accept(McalecsModItems.SURASSHU_EEK.get());
+				tabData.accept(McalecsModItems.SUPER_MARIO_ODYSSEY_JUMP_UP_SUPER_STAR.get());
+				tabData.accept(McalecsModItems.THE_LIVING_TOMBSTONE_FIVE_NIGHTS_AT_FREDDYS.get());
+				tabData.accept(McalecsModItems.THE_NEWTON_BROTHERS_FIVE_NIGHTS_AT_FREDDYS.get());
+				tabData.accept(McalecsModItems.SUPER_MARIO_GALAXY_ROSALINA_IN_THE_OBSERVATORY.get());
+				tabData.accept(McalecsModItems.SUPER_SMASH_BROS_ULTIMATE_MENU.get());
+				tabData.accept(McalecsModItems.SUPER_MARIO_GALAXY_GUSTY_GARDEN_GALAXY.get());
 			})
 
 					.build());

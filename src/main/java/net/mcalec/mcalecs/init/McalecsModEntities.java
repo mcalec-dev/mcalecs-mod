@@ -25,20 +25,20 @@ import net.mcalec.mcalecs.McalecsMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class McalecsModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, McalecsMod.MODID);
-	public static final RegistryObject<EntityType<McAlecPersonEntity>> MCALEC = register("mcalec",
-			EntityType.Builder.<McAlecPersonEntity>of(McAlecPersonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(McAlecPersonEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<BoykisserMaidEntity>> BOYKISSER_MAID = register("boykisser_maid",
-			EntityType.Builder.<BoykisserMaidEntity>of(BoykisserMaidEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoykisserMaidEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<McalecsVilagerEntity>> VILLAGER = register("villager",
 			EntityType.Builder.<McalecsVilagerEntity>of(McalecsVilagerEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(McalecsVilagerEntity::new)
 
 					.sized(0.6f, 1.95f));
+	public static final RegistryObject<EntityType<McAlecPersonEntity>> MCALEC = register("mcalec",
+			EntityType.Builder.<McAlecPersonEntity>of(McAlecPersonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(McAlecPersonEntity::new)
+
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BoykisserEntity>> BOYKISSER = register("boykisser",
-			EntityType.Builder.<BoykisserEntity>of(BoykisserEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(BoykisserEntity::new)
+			EntityType.Builder.<BoykisserEntity>of(BoykisserEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoykisserEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BoykisserMaidEntity>> BOYKISSER_MAID = register("boykisser_maid",
+			EntityType.Builder.<BoykisserMaidEntity>of(BoykisserMaidEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoykisserMaidEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -49,18 +49,18 @@ public class McalecsModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			McAlecPersonEntity.init();
-			BoykisserMaidEntity.init();
 			McalecsVilagerEntity.init();
+			McAlecPersonEntity.init();
 			BoykisserEntity.init();
+			BoykisserMaidEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(MCALEC.get(), McAlecPersonEntity.createAttributes().build());
-		event.put(BOYKISSER_MAID.get(), BoykisserMaidEntity.createAttributes().build());
 		event.put(VILLAGER.get(), McalecsVilagerEntity.createAttributes().build());
+		event.put(MCALEC.get(), McAlecPersonEntity.createAttributes().build());
 		event.put(BOYKISSER.get(), BoykisserEntity.createAttributes().build());
+		event.put(BOYKISSER_MAID.get(), BoykisserMaidEntity.createAttributes().build());
 	}
 }

@@ -3,7 +3,7 @@
     {
       "name": "McAlec",
       "type": "tab",
-      "sortid": 23,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mc_alec",
@@ -15,7 +15,7 @@
     {
       "name": "McAlecArmour",
       "type": "armor",
-      "sortid": 9,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mc_alec_armour",
@@ -33,7 +33,7 @@
     {
       "name": "MusicUI",
       "type": "gui",
-      "sortid": 24,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_ui",
@@ -49,7 +49,7 @@
     {
       "name": "MusicUIkeybindOnKeyReleased",
       "type": "procedure",
-      "sortid": 25,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_u_ikeybind_on_key_released",
@@ -85,7 +85,7 @@
     {
       "name": "MusicUIkeybind",
       "type": "keybind",
-      "sortid": 26,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_u_ikeybind",
@@ -99,7 +99,7 @@
     {
       "name": "McAlecPerson",
       "type": "livingentity",
-      "sortid": 11,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mcalec",
@@ -115,7 +115,7 @@
     {
       "name": "Mcalecspecialbiome",
       "type": "biome",
-      "sortid": 32,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mcalecspecialbiome",
@@ -131,7 +131,7 @@
     {
       "name": "Painite",
       "type": "item",
-      "sortid": 14,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite",
@@ -146,7 +146,7 @@
     {
       "name": "PainiteOre",
       "type": "block",
-      "sortid": 15,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_ore",
@@ -166,7 +166,7 @@
     {
       "name": "PainiteBlock",
       "type": "block",
-      "sortid": 16,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_block",
@@ -183,7 +183,7 @@
     {
       "name": "PainiteOreBlockRecipe",
       "type": "recipe",
-      "sortid": 33,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_ore_block_recipe",
@@ -197,7 +197,7 @@
     {
       "name": "PainiteBlockOreRecipe",
       "type": "recipe",
-      "sortid": 34,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_block_ore_recipe",
@@ -211,7 +211,7 @@
     {
       "name": "PainiteOreSmelting",
       "type": "recipe",
-      "sortid": 35,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_ore_smelting",
@@ -225,7 +225,7 @@
     {
       "name": "PainitePickaxe",
       "type": "tool",
-      "sortid": 20,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_pickaxe",
@@ -240,7 +240,7 @@
     {
       "name": "PainiteAxe",
       "type": "tool",
-      "sortid": 19,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_axe",
@@ -255,7 +255,7 @@
     {
       "name": "PainiteSword",
       "type": "tool",
-      "sortid": 18,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_sword",
@@ -270,7 +270,7 @@
     {
       "name": "PainiteShovel",
       "type": "tool",
-      "sortid": 21,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_shovel",
@@ -285,7 +285,7 @@
     {
       "name": "PainiteHoe",
       "type": "tool",
-      "sortid": 22,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_hoe",
@@ -300,7 +300,7 @@
     {
       "name": "PainitePickaxeRecipe",
       "type": "recipe",
-      "sortid": 36,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_pickaxe_recipe",
@@ -314,7 +314,7 @@
     {
       "name": "PainiteAxeRecipe",
       "type": "recipe",
-      "sortid": 37,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_axe_recipe",
@@ -328,7 +328,7 @@
     {
       "name": "PainiteSwordRecipe",
       "type": "recipe",
-      "sortid": 38,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_sword_recipe",
@@ -342,7 +342,7 @@
     {
       "name": "PainiteShovelRecipe",
       "type": "recipe",
-      "sortid": 39,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_shovel_recipe",
@@ -356,7 +356,7 @@
     {
       "name": "PainiteHoeRecipe",
       "type": "recipe",
-      "sortid": 40,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_hoe_recipe",
@@ -370,7 +370,7 @@
     {
       "name": "PainiteArmor",
       "type": "armor",
-      "sortid": 17,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_armor",
@@ -388,7 +388,7 @@
     {
       "name": "PainiteArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 41,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_armor_helmet_recipe",
@@ -402,7 +402,7 @@
     {
       "name": "PainiteArmorChestplateRecipe",
       "type": "recipe",
-      "sortid": 42,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_armor_chestplate_recipe",
@@ -416,7 +416,7 @@
     {
       "name": "PainiteArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 43,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_armor_leggings_recipe",
@@ -430,7 +430,7 @@
     {
       "name": "PainiteArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_armor_boots_recipe",
@@ -444,7 +444,7 @@
     {
       "name": "PainiteTab",
       "type": "tab",
-      "sortid": 45,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "painite_tab",
@@ -456,7 +456,7 @@
     {
       "name": "TruculaBiome",
       "type": "biome",
-      "sortid": 46,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trucula_biome",
@@ -472,7 +472,7 @@
     {
       "name": "AdvancedJukebox",
       "type": "block",
-      "sortid": 8,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_jukebox",
@@ -490,7 +490,7 @@
     {
       "name": "AdvancedJukeboxOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 48,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_jukebox_on_block_right_clicked",
@@ -526,7 +526,7 @@
     {
       "name": "AdvancedJukeboxUpdateTick",
       "type": "procedure",
-      "sortid": 49,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_jukebox_update_tick",
@@ -558,7 +558,7 @@
     {
       "name": "BoykisserMaid",
       "type": "livingentity",
-      "sortid": 12,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boykisser_maid",
@@ -574,7 +574,7 @@
     {
       "name": "MusicUIStopAllSounds",
       "type": "procedure",
-      "sortid": 55,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_ui_stop_all_sounds",
@@ -606,7 +606,7 @@
     {
       "name": "AdvancedJukeboxParticle",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_jukebox_particle",
@@ -638,7 +638,7 @@
     {
       "name": "McalecsVilager",
       "type": "livingentity",
-      "sortid": 58,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "villager",
@@ -654,7 +654,7 @@
     {
       "name": "JamiroquaiVirtualInsanity",
       "type": "musicdisc",
-      "sortid": 59,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jamiroquai_virtual_insanity",
@@ -669,7 +669,7 @@
     {
       "name": "Boykisser",
       "type": "livingentity",
-      "sortid": 60,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boykisser",
@@ -685,7 +685,7 @@
     {
       "name": "MatthewWilderBreakMyStride",
       "type": "musicdisc",
-      "sortid": 62,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "matthew_wilder_break_my_stride",
@@ -700,7 +700,7 @@
     {
       "name": "FrizkAllMyFellas",
       "type": "musicdisc",
-      "sortid": 63,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frizk_all_my_fellas",
@@ -715,7 +715,7 @@
     {
       "name": "MusicTab",
       "type": "tab",
-      "sortid": 64,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_tab",
@@ -727,7 +727,7 @@
     {
       "name": "EdHelmsHowBadCanIBe",
       "type": "musicdisc",
-      "sortid": 66,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ed_helms_how_bad_can_i_be",
@@ -742,7 +742,7 @@
     {
       "name": "C418DragonFish",
       "type": "musicdisc",
-      "sortid": 67,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "c418_dragon_fish",
@@ -757,7 +757,7 @@
     {
       "name": "ConfigRenderer",
       "type": "procedure",
-      "sortid": 69,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "config_renderer",
@@ -777,7 +777,7 @@
     {
       "name": "ConfigGUI",
       "type": "gui",
-      "sortid": 70,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "config_gui",
@@ -791,7 +791,7 @@
     {
       "name": "OpenConfigGUIOnKeyPressed",
       "type": "procedure",
-      "sortid": 71,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_config_gui_on_key_pressed",
@@ -826,7 +826,7 @@
     {
       "name": "OpenConfigGUI",
       "type": "keybind",
-      "sortid": 72,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_config_gui",
@@ -839,7 +839,7 @@
     {
       "name": "Groovydominoes52Bee",
       "type": "musicdisc",
-      "sortid": 73,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "groovydominoes52_bee",
@@ -847,6 +847,124 @@
         "files": [
           "src/main/java/net/mcalec/mcalecs/item/Groovydominoes52BeeItem.java",
           "src/main/resources/assets/mcalecs/models/item/groovydominoes52_bee.json"
+        ]
+      },
+      "path": "~/Music"
+    },
+    {
+      "name": "SurasshuEek",
+      "type": "musicdisc",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surasshu_eek",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcalec/mcalecs/item/SurasshuEekItem.java",
+          "src/main/resources/assets/mcalecs/models/item/surasshu_eek.json"
+        ]
+      },
+      "path": "~/Music"
+    },
+    {
+      "name": "Supermarioodysseyjumpupsuperstar",
+      "type": "musicdisc",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_mario_odyssey_jump_up_super_star",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcalec/mcalecs/item/SupermarioodysseyjumpupsuperstarItem.java",
+          "src/main/resources/assets/mcalecs/models/item/super_mario_odyssey_jump_up_super_star.json"
+        ]
+      },
+      "path": "~/Music"
+    },
+    {
+      "name": "TheLivingTombstoneFiveNightsAtFreddys",
+      "type": "musicdisc",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_living_tombstone_five_nights_at_freddys",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mcalecs/models/item/the_living_tombstone_five_nights_at_freddys.json",
+          "src/main/java/net/mcalec/mcalecs/item/TheLivingTombstoneFiveNightsAtFreddysItem.java"
+        ]
+      },
+      "path": "~/Music"
+    },
+    {
+      "name": "TheNewtonBrothersFiveNightsAtFreddys",
+      "type": "musicdisc",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_newton_brothers_five_nights_at_freddys",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcalec/mcalecs/item/TheNewtonBrothersFiveNightsAtFreddysItem.java",
+          "src/main/resources/assets/mcalecs/models/item/the_newton_brothers_five_nights_at_freddys.json"
+        ]
+      },
+      "path": "~/Music"
+    },
+    {
+      "name": "SizableButton",
+      "type": "code",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sizable_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcalec/mcalecs/SizableButton.java"
+        ]
+      }
+    },
+    {
+      "name": "SuperMarioGalaxyRosalinaInTheObservatory",
+      "type": "musicdisc",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_mario_galaxy_rosalina_in_the_observatory",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mcalecs/models/item/super_mario_galaxy_rosalina_in_the_observatory.json",
+          "src/main/java/net/mcalec/mcalecs/item/SuperMarioGalaxyRosalinaInTheObservatoryItem.java"
+        ]
+      },
+      "path": "~/Music"
+    },
+    {
+      "name": "SuperSmashBrosUltimateMenu",
+      "type": "musicdisc",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_smash_bros_ultimate_menu",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mcalecs/models/item/super_smash_bros_ultimate_menu.json",
+          "src/main/java/net/mcalec/mcalecs/item/SuperSmashBrosUltimateMenuItem.java"
+        ]
+      },
+      "path": "~/Music"
+    },
+    {
+      "name": "SuperMarioGalaxyGustyGardenGalaxy",
+      "type": "musicdisc",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_mario_galaxy_gusty_garden_galaxy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mcalecs/models/item/super_mario_galaxy_gusty_garden_galaxy.json",
+          "src/main/java/net/mcalec/mcalecs/item/SuperMarioGalaxyGustyGardenGalaxyItem.java"
         ]
       },
       "path": "~/Music"
@@ -969,29 +1087,37 @@
   ],
   "language_map": {
     "en_us": {
+      "item.mcalecs.super_mario_odyssey_jump_up_super_star": "Music Disc",
       "item.mcalecs.frizk_all_my_fellas": "Music Disc",
+      "item.mcalecs.the_living_tombstone_five_nights_at_freddys": "Music Disc",
       "key.mcalecs.music_u_ikeybind": "Music UI",
+      "item.mcalecs.the_newton_brothers_five_nights_at_freddys": "Music Disc",
       "item.mcalecs.painite_armor_leggings": "Painite Leggings",
       "item.mcalecs.painite_hoe": "Painite Hoe",
+      "item.mcalecs.surasshu_eek": "Music Disc",
       "item.mcalecs.matthew_wilder_break_my_stride.desc": "Matthew Wilder - Break My Stride",
-      "item.mcalecs.mc_alec_armour_leggings": "McAlec\u0027s Leggings",
-      "biome.mcalecs.trucula_biome": "Trucula Forest",
-      "key.mcalecs.open_config_gui": "Open Config GUI",
       "item.mcalecs.groovydominoes52_bee.desc": "GroovyDominoes52 - Bee.",
+      "key.mcalecs.open_config_gui": "Open Config GUI",
+      "biome.mcalecs.trucula_biome": "Trucula Forest",
+      "item.mcalecs.mc_alec_armour_leggings": "McAlec\u0027s Leggings",
       "item_group.mcalecs.music_tab": "Music",
       "gui.mcalecs.music_ui.label_empty": "?",
       "item.mcalecs.jamiroquai_virtual_insanity.desc": "Jamiroquai - Virtual Insanity",
       "gui.mcalecs.music_ui.button_stop_all_sounds": "Stop All Sounds",
+      "item.mcalecs.super_smash_bros_ultimate_menu": "Music Disc",
       "block.mcalecs.painite_ore": "Painite Ore",
       "item.mcalecs.painite_sword": "Painite Sword",
       "item.mcalecs.matthew_wilder_break_my_stride": "Music Disc",
+      "item.mcalecs.super_mario_galaxy_gusty_garden_galaxy": "Music Disc",
       "item.mcalecs.painite_armor_helmet": "Painite Helmet",
       "item.mcalecs.mc_alec_armour_helmet": "McAlec\u0027s Helmet",
       "item.mcalecs.boykisser_maid_spawn_egg": "Boykisser Maid Spawn Egg",
       "item.mcalecs.mc_alec_armour_boots": "McAlec\u0027s Boots",
       "item_group.mcalecs.mc_alec": "McAlecs Mod",
-      "item_group.mcalecs.painite_tab": "Painite",
+      "item.mcalecs.super_mario_galaxy_gusty_garden_galaxy.desc": "Super Mario Galaxy - Gusty Garden Galaxy",
       "item.mcalecs.ed_helms_how_bad_can_i_be.desc": "Ed Helms - How Bad Can I Be",
+      "item_group.mcalecs.painite_tab": "Painite",
+      "item.mcalecs.super_mario_galaxy_rosalina_in_the_observatory.desc": "Super Mario Galaxy - Rosalina In The Observatory",
       "item.mcalecs.frizk_all_my_fellas.desc": "Frizk - All My Fellas",
       "item.mcalecs.villager_spawn_egg": "Villager Spawn Egg",
       "item.mcalecs.painite_armor_boots": "Painite Boots",
@@ -1008,16 +1134,22 @@
       "gui.mcalecs.music_ui.tooltip_stops_all_record_sounds_by_the_p": "Stops all record sounds by the player.",
       "item.mcalecs.painite_axe": "Painite Axe",
       "item.mcalecs.c418_dragon_fish": "Music Disc",
+      "item.mcalecs.super_mario_odyssey_jump_up_super_star.desc": "Super Mario Odyssey - Jump Up Super Star",
       "item.mcalecs.boykisser_spawn_egg": "Boykisser Spawn Egg",
       "entity.mcalecs.boykisser": "Boykisser",
       "block.mcalecs.painite_block": "Block of Painite",
       "item.mcalecs.painite": "Painite",
       "item.mcalecs.groovydominoes52_bee": "Music Disc",
       "item.mcalecs.painite_pickaxe": "Painite Pickaxe",
+      "item.mcalecs.the_living_tombstone_five_nights_at_freddys.desc": "The Living Tombstone - Five Nights at Freddy\u0027s",
       "gui.mcalecs.music_ui.label_music_ui": "Music UI",
       "item.mcalecs.ed_helms_how_bad_can_i_be": "Music Disc",
       "subtitles.boykisser_meow": "Boykisser meows",
-      "block.mcalecs.advanced_jukebox": "Advanced Jukebox"
+      "item.mcalecs.surasshu_eek.desc": "Surasshu - Eek",
+      "item.mcalecs.super_smash_bros_ultimate_menu.desc": "Super Smash Bros Ultimate - Menu",
+      "block.mcalecs.advanced_jukebox": "Advanced Jukebox",
+      "item.mcalecs.the_newton_brothers_five_nights_at_freddys.desc": "The Newton Brothers - Five Nights at Freddy\u0027s",
+      "item.mcalecs.super_mario_galaxy_rosalina_in_the_observatory": "Music Disc"
     }
   },
   "foldersRoot": {
@@ -1087,6 +1219,8 @@
     "requiredMods": [],
     "dependencies": [
       "configured",
+      "forgeconfigapiport",
+      "forgeconfigscreens",
       "catalogue"
     ],
     "dependants": [],

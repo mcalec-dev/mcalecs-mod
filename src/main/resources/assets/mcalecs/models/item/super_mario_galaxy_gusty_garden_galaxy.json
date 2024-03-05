@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mcalecs:item/super_mario_galaxy_gusty_garden_galaxy"
+  }
+}

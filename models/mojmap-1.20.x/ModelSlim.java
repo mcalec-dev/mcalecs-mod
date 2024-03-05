@@ -1,12 +1,12 @@
-// Made with Blockbench 4.8.3
+// Made with Blockbench 4.9.4
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
+public class ModelSlim<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("modid", "custom_model"), "main");
+			new ResourceLocation("modid", "slim"), "main");
 	private final ModelPart Head;
 	private final ModelPart Body;
 	private final ModelPart RightArm;
@@ -14,7 +14,7 @@ public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
 	private final ModelPart RightLeg;
 	private final ModelPart LeftLeg;
 
-	public Modelcustom_model(ModelPart root) {
+	public ModelSlim(ModelPart root) {
 		this.Head = root.getChild("Head");
 		this.Body = root.getChild("Body");
 		this.RightArm = root.getChild("RightArm");

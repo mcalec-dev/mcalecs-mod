@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mcalecs:item/the_living_tombstone_five_nights_at_freddys"
+  }
+}

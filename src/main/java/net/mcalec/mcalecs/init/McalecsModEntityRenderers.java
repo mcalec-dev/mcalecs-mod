@@ -18,9 +18,9 @@ import net.mcalec.mcalecs.client.renderer.BoykisserMaidRenderer;
 public class McalecsModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(McalecsModEntities.MCALEC.get(), McAlecPersonRenderer::new);
-		event.registerEntityRenderer(McalecsModEntities.BOYKISSER_MAID.get(), BoykisserMaidRenderer::new);
 		event.registerEntityRenderer(McalecsModEntities.VILLAGER.get(), McalecsVilagerRenderer::new);
+		event.registerEntityRenderer(McalecsModEntities.MCALEC.get(), McAlecPersonRenderer::new);
 		event.registerEntityRenderer(McalecsModEntities.BOYKISSER.get(), BoykisserRenderer::new);
+		event.registerEntityRenderer(McalecsModEntities.BOYKISSER_MAID.get(), BoykisserMaidRenderer::new);
 	}
 }

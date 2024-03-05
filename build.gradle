@@ -3,6 +3,7 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = '0.6-1.20.1'
@@ -25,6 +26,8 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             property 'forge.enabledGameTestNamespaces', 'mcalecs'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             mods {
                 "${mod_id}" {
                     source sourceSets.main
@@ -49,6 +52,18 @@ minecraft {
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
+mixin {
+    // MixinGradle Settings
+    add sourceSets.main, 'net.mcalecs.refmap.json'
+    config 'net.mcalec.mcalecs'
+
+    debug.verbose = true
+    debug.export = true
+    dumpTargetOnFailure = true
+    
+    quiet
+}
+
 repositories {
 	// Mod Location
     flatDir {
@@ -56,13 +71,13 @@ repositories {
     }
 
     maven {
-    	// Curse Maven (Curseforge)
+    	// Curse Maven
     	name = "Curse Maven"
         url "https://cursemaven.com"
     }
 
     maven {
-    	// Modrinth Maven (Modrinth)
+    	// Modrinth Maven
     	name = "Modrinth Maven"
         url = "https://api.modrinth.com/maven"
     }
@@ -78,13 +93,26 @@ repositories {
         name = "Progwml6 Maven"
         url = "https://dvs1.progwml6.com/files/maven/"
     }
+    maven {
+    	// Fuzs Maven
+        name = "Fuzs Mod Resources"
+        url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
+    }
     
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.2.20' // Forge 1.20.1 (47.2.20)
+    implementation fg.deobf("curse.maven:oauth-account-manager-546462:4620007")
+    implementation fg.deobf("curse.maven:u-team-core-273744:4681290")
 
-	annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+	implementation fg.deobf("curse.maven:configured-457570:5101367")
+	implementation fg.deobf("curse.maven:catalogue-459701:4766090")
+
+	runtimeOnly(fg.deobf("fuzs.forgeconfigscreens:forgeconfigscreens-forge:8.0.0"))
+	implementation fg.deobf("curse.maven:config-menus-forge-544048:4672356")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     
 }
 

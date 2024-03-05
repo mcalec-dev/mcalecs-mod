@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Boykisser",
     "mobLabel": "",
-    "mobModelName": "Modelcustom_model",
+    "mobModelName": "ModelSlim",
     "mobModelTexture": "boykisser-event.png",
     "transparentModelCondition": {
       "fixedValue": false
@@ -67,8 +67,8 @@
     "movementSpeed": 0.3,
     "stepHeight": 0.6,
     "armorBaseValue": 0.0,
-    "trackingRange": 32,
-    "followRange": 16,
+    "trackingRange": 64,
+    "followRange": 32,
     "health": 20,
     "xpAmount": 0,
     "waterMob": false,
