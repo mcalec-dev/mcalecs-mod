@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Boykisser",
     "mobLabel": "",
-    "mobModelName": "ModelSlim",
-    "mobModelTexture": "boykisser-event.png",
+    "mobModelName": "ModelBoykisser",
+    "mobModelTexture": "boykisser.png",
     "transparentModelCondition": {
       "fixedValue": false
     },

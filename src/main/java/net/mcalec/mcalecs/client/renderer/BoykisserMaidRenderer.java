@@ -22,6 +22,6 @@ public class BoykisserMaidRenderer extends MobRenderer<BoykisserMaidEntity, Mode
 
 	@Override
 	public ResourceLocation getTextureLocation(BoykisserMaidEntity entity) {
-		return new ResourceLocation("mcalecs:textures/entities/boykisser.png");
+		return new ResourceLocation("mcalecs:textures/entities/boykisser_maid.png");
 	}
 }

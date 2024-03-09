@@ -34,6 +34,7 @@ public class SizableButton {
 
 	@Mod.EventBusSubscriber
 	private static class ForgeBusEvents {
+
 		@SubscribeEvent
 		public static void serverLoad(ServerStartingEvent event) {
 		}

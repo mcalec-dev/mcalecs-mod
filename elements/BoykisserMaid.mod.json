@@ -5,7 +5,7 @@
     "mobName": "Boykisser Maid",
     "mobLabel": "",
     "mobModelName": "ModelSlim",
-    "mobModelTexture": "boykisser.png",
+    "mobModelTexture": "boykisser_maid.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
