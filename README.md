@@ -10,7 +10,28 @@ An Advanced Jukebox for playing custom discs
 - Biomes (2 currently).
 - A semi-proper "MusicUI" for playing different sounds in Minecraft.
 
-## I do not own/claim any music, pictures, items, or textures that may be deemed to be mine. I own all the assets I have created.
+
+
+### Maven Repo
+
+Put the code below under the "minecraft" block in build.gradle
+
+```
+repositories {
+    maven {
+    // McAlec's Mod repo
+        name = "McAlecs"
+        url = "https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/mcmodsrepo/"
+    }
+}
+```
+Then put this code in the "dependencies" block just below the "repositories" one in build.gradle
+
+```
+implementation fg.deobf("net.mcalec.mcalecs:mcalecsmod-0.7:0.7") // Changed Mod
+```
+
+**I do not own/claim any music, pictures, items, or textures that may be deemed to be mine. I own all the assets I have created.**
 
 If you have any problems, please don't hesitate to contact me.
 McAlec
