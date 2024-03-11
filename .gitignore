@@ -5,7 +5,7 @@ build/
 
 # MCreator workspace
 .mcreator/
-elements/
+/elements/
 run/
 
 # IDE's
