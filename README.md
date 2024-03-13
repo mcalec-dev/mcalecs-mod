@@ -28,7 +28,7 @@ repositories {
 Then put this code in the "dependencies" block just below the "repositories" one in build.gradle
 
 ```
-implementation fg.deobf("net.mcalec.mcalecs:mcalecsmod-0.7:0.7") // Changed Mod
+implementation fg.deobf("net.mcalec.mcalecs:mcalecsmod-0.7:0.7") // McAlec's Mod Repo
 ```
 
 **I do not own/claim any music, pictures, items, or textures that may be deemed to be mine. I own all the assets I have created.**
