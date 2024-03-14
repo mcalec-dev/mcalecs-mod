@@ -16,7 +16,7 @@ An Advanced Jukebox for playing custom discs
 
 
 
-### Wanna make an addon
+### How to make an addon
 
 Put this code in the "repositories" block in build.gradle
 
@@ -32,6 +32,18 @@ Then put this code in the "dependencies" block just below the "repositories" one
 
 ```gradle
 implementation fg.deobf("net.mcalec.mcalecs:mcalecsmod-0.7:0.7") // McAlec's Mod Repo
+```
+
+Now add this block of code under everything in your mods.toml 
+Make sure to replace the "{MODID}" after dependencies below.
+
+```toml
+[[dependencies.{MODID}]]
+    modId="mcalecs"
+    mandatory=true
+    versionRange="[0.7]" # Replace with the latest version
+    ordering="NONE"
+    side="BOTH"
 ```
 
 **I do not own/claim any music, pictures, items, or textures that may be deemed to be mine. I own all the assets I have created.**
