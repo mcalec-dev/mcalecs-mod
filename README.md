@@ -25,7 +25,7 @@ Put this code in the "repositories" block in build.gradle
     // McAlec's Mod repo
     name = "McAlecs"
     url = "https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/mcmodsrepo/"
-```}
+}```
 
 Then put this code in the "dependencies" block just below the "repositories" one in build.gradle
 
