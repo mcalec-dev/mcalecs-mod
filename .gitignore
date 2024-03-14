@@ -4,7 +4,7 @@ build/
 .DS_STORE
 
 # MCreator workspace
-.mcreator/
+.mcreator
 /elements/
 run/
 
@@ -13,3 +13,6 @@ run/
 .project
 .idea/
 .settings/
+
+# Annoying Windows .ini files
+[Dd]esktop.ini
