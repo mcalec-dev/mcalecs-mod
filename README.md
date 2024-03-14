@@ -6,7 +6,10 @@ A couple of things this mod adds:
 
 An Advanced Jukebox for playing custom discs
 - Custom Music Discs.
-- Entities, McAlec (me), TESTIFICATE (>1.9 snapshots Villager), Boykisser (it's overrated, I know).
+- Entities, 
+ - McAlec (me)
+ - TESTIFICATE (>1.9 snapshots Villager) 
+ - Boykisser (it's overrated, I know).
 - Structures (soon).
 - Biomes (2 currently).
 - A semi-proper "MusicUI" for playing different sounds in Minecraft.
