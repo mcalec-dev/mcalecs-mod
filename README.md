@@ -1,5 +1,5 @@
-# This mod uses Forge 47.2.0+ _(Forge 1.20.1)_
-## We test on latest Forge versions
+### This mod uses Forge 47.2.0+ _(Forge 1.20.1)_
+### We test on latest Forge versions
 This mod offers a variety of music discs and new blocks.
 
 A couple of things this mod adds:
