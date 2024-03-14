@@ -20,17 +20,17 @@ An Advanced Jukebox for playing custom discs
 
 Put this code in the "repositories" block in build.gradle
 
-`
+```gradle
 maven {
     // McAlec's Mod repo
     name = "McAlecs"
     url = "https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/mcmodsrepo/"
 }
-`
+```
 
 Then put this code in the "dependencies" block just below the "repositories" one in build.gradle
 
-```
+```gradle
 implementation fg.deobf("net.mcalec.mcalecs:mcalecsmod-0.7:0.7") // McAlec's Mod Repo
 ```
 
