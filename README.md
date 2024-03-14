@@ -16,17 +16,15 @@ An Advanced Jukebox for playing custom discs
 
 
 
-### Maven Repo
+### Wanna make an addon
 
-Put the code below under the "minecraft" block in build.gradle
+Put this code in the "repositories" block in build.gradle
 
 ```
-repositories {
-    maven {
+maven {
     // McAlec's Mod repo
-        name = "McAlecs"
-        url = "https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/mcmodsrepo/"
-    }
+    name = "McAlecs"
+    url = "https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/mcmodsrepo/"
 }
 ```
 Then put this code in the "dependencies" block just below the "repositories" one in build.gradle
