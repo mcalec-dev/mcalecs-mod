@@ -32,7 +32,7 @@ I do not own/claim any music, pictures, items, or textures that may be deemed to
     side="BOTH"
 
 [[dependencies.mcalecs]]
-    modId="forgeconfigapiport"
+    modId="forgeconfigapi"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
