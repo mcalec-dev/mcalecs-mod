@@ -6,6 +6,10 @@ classes/
 
 # Eclipse
 *.launch
+# MCreator workspace
+.mcreator
+/elements/
+run/
 
 # Idea
 .idea/
@@ -38,3 +42,6 @@ gradle-BACKUP.properties
 build-BACKUP.gradle
 src/generated/
 src/test/
+
+# Annoying Windows .ini files
+[Dd]esktop.ini
