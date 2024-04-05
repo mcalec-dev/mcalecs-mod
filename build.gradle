@@ -47,7 +47,7 @@ minecraft {
             }
         }
         server {
-			workingDirectory project.file('run')
+			workingDirectory project.file('run-server')
 			
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
@@ -62,7 +62,7 @@ minecraft {
             }
         }
         gameTestServer {
-        	workingDirectory project.file('run')
+        	workingDirectory project.file('run-server')
         	
         	property 'forge.logging.markers', 'REGISTRIES'
         	property 'forge.logging.console.level', 'debug'
@@ -79,7 +79,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
             property 'forge.enabledGameTestNamespaces', 'mcalecs'
 
-            args '--mod', 'changed', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'mcalecs', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
 			mods {
                 "${mod_id}" {
@@ -117,10 +117,17 @@ repositories {
     }
 
     maven {
-        // JEI Maven
-        name = "Progwml6 Maven"
+        // location of the maven that hosts JEI files before January 2023
+        name = "Progwml6's maven"
         url = "https://dvs1.progwml6.com/files/maven/"
     }
+
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+
     maven {
     	// Fuzs Maven
         name = "Fuzs Mod Resources"
@@ -130,33 +137,38 @@ repositories {
     
 }
 
-//mixin {
-    //add sourceSets.main, 'mcalecs.refmap.json'
+mixin {
+    //config "mixins.mcalecs.json"
+    //add sourceSets.main, "mixins.mcalecs.refmap.json"
 
-    //config 'mcalecs.refmap.json'
-    //config 'mcalecs.compatibility.mixins.json'
-//}
+    showMessageTypes = true
+}
 
 dependencies {
+    // Minecraft and Forge Versions
     minecraft "net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}" // Forge 1.20.1 (47.2.20)
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor' // Annotation Processor
-    
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor' // SpongedPowered Mixin Annotation Processor
+
+    // Curse Maven
     implementation fg.deobf("curse.maven:oauth-account-manager-546462:4620007") // Oauth Account Manager
     implementation fg.deobf("curse.maven:u-team-core-273744:4681290") // U Team Core
-
-	implementation fg.deobf("curse.maven:configured-457570:5101367") // Configured
+    implementation fg.deobf("curse.maven:configured-457570:5180900") // Configured
 	implementation fg.deobf("curse.maven:catalogue-459701:4766090") // Catalogue
-
-	implementation fg.deobf("curse.maven:jei-238222:5101366") // JEI
-	//implementation fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${reiVersion}") // REI
-
 	implementation fg.deobf("curse.maven:worldedit-225608:4586218") // WorldEdit
+    implementation fg.deobf("curse.maven:config-menus-forge-544048:4672356") // Forge Config Menus
 
+    // Fuzs Maven
 	runtimeOnly(fg.deobf("fuzs.forgeconfigscreens:forgeconfigscreens-forge:8.0.0")) // Forge Config Screens
-	implementation fg.deobf("curse.maven:config-menus-forge-544048:4672356") // Forge Config Menus
 
-    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:${clothVersion}") // Cloth Config
-    implementation fg.deobf("dev.architectury:architectury-forge:${archVersion}") // Architectury
+    // Mod Maven
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraftVersion}-common-api:${jeiVersion}")) // Just Enough Items (Compile Common API)
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraftVersion}-forge-api:${jeiVersion}")) // Just Enough Items (Compile Forge API)
+    implementation fg.deobf("dev.architectury:architectury-forge:${archVersion}") // Architectury API
+    //runtimeOnly(fg.deobf("mezz.jei:jei-${minecraftVersion}-forge:${jeiVersion}")) // Just Enough Items (Forge Runtime JEI)
+
+    // Shedaniel Maven
+    implementation fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${reiVersion}") // Roughly Enough Items
+    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:${clothVersion}") // Cloth Config API
     
 }
 
@@ -192,7 +204,5 @@ publishing {
         }
     }
 }
-
-apply from: 'mcreator.gradle'
 
 println "build.gradle is done!"

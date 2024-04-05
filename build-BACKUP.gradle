@@ -1,17 +1,17 @@
 buildscript {
-	repositories {
-		maven { url = 'https://maven.minecraftforge.net' }
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
-	}
+    }
 }
 
 plugins {
-	id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.spongepowered.mixin' version '0.7.+'
     id 'eclipse'
     id 'idea'
@@ -34,12 +34,12 @@ minecraft {
 
     runs {
         client {
-			workingDirectory project.file('run')
-			
+            workingDirectory project.file('run')
+
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             property 'forge.enabledGameTestNamespaces', 'mcalecs'
-            
+
             mods {
                 "${mod_id}" {
                     source sourceSets.main
@@ -47,14 +47,14 @@ minecraft {
             }
         }
         server {
-			workingDirectory project.file('run')
-			
+            workingDirectory project.file('run')
+
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             property 'forge.enabledGameTestNamespaces', 'mcalecs'
-            
+
             args '--nogui'
-            
+
             mods {
                 "${mod_id}" {
                     source sourceSets.main
@@ -62,26 +62,26 @@ minecraft {
             }
         }
         gameTestServer {
-        	workingDirectory project.file('run')
-        	
-        	property 'forge.logging.markers', 'REGISTRIES'
-        	property 'forge.logging.console.level', 'debug'
-        	property 'forge.enabledGameTestNamespaces', 'mcalecs'
-        	
-        	mods {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'mcalecs'
+
+            mods {
                 "${mod_id}" {
                     source sourceSets.main
                 }
             }
         }
         data {
-        	property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             property 'forge.enabledGameTestNamespaces', 'mcalecs'
 
-            args '--mod', 'changed', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'mcalecs', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
-			mods {
+            mods {
                 "${mod_id}" {
                     source sourceSets.main
                 }
@@ -93,20 +93,20 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-	// Mod Location
+    // Mod Location
     flatDir {
         dirs 'libs'
     }
 
     maven {
-    	// Curse Maven
-    	name = "Curse Maven"
+        // Curse Maven
+        name = "Curse Maven"
         url "https://cursemaven.com"
     }
 
     maven {
-    	// Modrinth Maven
-    	name = "Modrinth Maven"
+        // Modrinth Maven
+        name = "Modrinth Maven"
         url = "https://api.modrinth.com/maven"
     }
 
@@ -122,42 +122,42 @@ repositories {
         url = "https://dvs1.progwml6.com/files/maven/"
     }
     maven {
-    	// Fuzs Maven
+        // Fuzs Maven
         name = "Fuzs Mod Resources"
         url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
     }
     maven { url "https://maven.shedaniel.me" }
-    
+
 }
 
 //mixin {
-    //add sourceSets.main, 'mcalecs.refmap.json'
+//add sourceSets.main, 'mcalecs.refmap.json'
 
-    //config 'mcalecs.refmap.json'
-    //config 'mcalecs.compatibility.mixins.json'
+//config 'mcalecs.refmap.json'
+//config 'mcalecs.compatibility.mixins.json'
 //}
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}" // Forge 1.20.1 (47.2.20)
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor' // Annotation Processor
-    
+
     implementation fg.deobf("curse.maven:oauth-account-manager-546462:4620007") // Oauth Account Manager
     implementation fg.deobf("curse.maven:u-team-core-273744:4681290") // U Team Core
 
-	implementation fg.deobf("curse.maven:configured-457570:5101367") // Configured
-	implementation fg.deobf("curse.maven:catalogue-459701:4766090") // Catalogue
+    implementation fg.deobf("curse.maven:configured-457570:5101367") // Configured
+    implementation fg.deobf("curse.maven:catalogue-459701:4766090") // Catalogue
 
-	implementation fg.deobf("curse.maven:jei-238222:5101366") // JEI
-	//implementation fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${reiVersion}") // REI
+    implementation fg.deobf("curse.maven:jei-238222:5101366") // JEI
+    //implementation fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${reiVersion}") // REI
 
-	implementation fg.deobf("curse.maven:worldedit-225608:4586218") // WorldEdit
+    implementation fg.deobf("curse.maven:worldedit-225608:4586218") // WorldEdit
 
-	runtimeOnly(fg.deobf("fuzs.forgeconfigscreens:forgeconfigscreens-forge:8.0.0")) // Forge Config Screens
-	implementation fg.deobf("curse.maven:config-menus-forge-544048:4672356") // Forge Config Menus
+    runtimeOnly(fg.deobf("fuzs.forgeconfigscreens:forgeconfigscreens-forge:8.0.0")) // Forge Config Screens
+    implementation fg.deobf("curse.maven:config-menus-forge-544048:4672356") // Forge Config Menus
 
     implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:${clothVersion}") // Cloth Config
     implementation fg.deobf("dev.architectury:architectury-forge:${archVersion}") // Architectury
-    
+
 }
 
 tasks.withType(JavaCompile).configureEach {

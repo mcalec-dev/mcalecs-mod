@@ -1,15 +1,40 @@
-# Gradle caches
+# Gradle
 .gradle/
 build/
-.DS_STORE
+out/
+classes/
 
-# MCreator workspace
-.mcreator/
-elements/
-run/
+# Eclipse
+*.launch
 
-# IDE's
+# Idea
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VScode
+.settings/
+.vscode/
+bin/
 .classpath
 .project
-.idea/
-.settings/
+
+# MacOS
+*.DS_Store
+
+# Minecraft
+run/
+run-server/
+
+# MCreator
+*.mcreator
+elements/
+mcreator.gradle
+
+# Other
+settings-BACKUP.gradle
+gradle-BACKUP.properties
+build-BACKUP.gradle
+src/generated/
+src/test/

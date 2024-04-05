@@ -1,17 +1,21 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="MIT License"
+license="CC BY-NC 4.0"
 
 [[mods]]
 modId="mcalecs"
-version="0.6"
+version="0.7"
 displayName="McAlec's Mod"
 updateJSONURL="https://raw.githubusercontent.com/McAlec1/mcalecsmod/master/update.json"
-displayURL="https://modrinth.com/mod/mcalecs-mod"
+displayURL="https://mcalec.dev/projects/mcalecs-mod"
 logoFile="logo.png"
-credits="McAlec. I do not own/claim any music, pictures, items, or textures that may be deemed to be mine. I own all the assets I have created."
+credits='''
+Made by McAlec.
+'''
 authors="McAlec"
-description="Soon..."
+description='''
+I do not own/claim any music, pictures, items, or textures that may be deemed to be mine. I own all the assets I have created.
+'''
 
 [[dependencies.mcalecs]]
     modId="minecraft"
@@ -20,26 +24,27 @@ description="Soon..."
     ordering="NONE"
     side="BOTH"
 
-
-
 [[dependencies.mcalecs]]
     modId="configured"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.mcalecs]]
     modId="forgeconfigapiport"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.mcalecs]]
     modId="forgeconfigscreens"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.mcalecs]]
     modId="catalogue"
     mandatory=false
@@ -47,3 +52,6 @@ description="Soon..."
     ordering="NONE"
     side="BOTH"
 
+[modproperties.mcalecs]
+configuredBackground="minecraft:textures/block/deepslate.png"
+catalougeItemIcon="mcalecs:advanced_jukebox"
