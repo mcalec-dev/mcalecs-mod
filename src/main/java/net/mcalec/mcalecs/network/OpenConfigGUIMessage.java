@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcalec.mcalecs.procedures.OpenConfigGUIOnKeyPressedProcedure;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 import java.util.function.Supplier;
 
@@ -58,6 +58,6 @@ public class OpenConfigGUIMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		McalecsMod.addNetworkMessage(OpenConfigGUIMessage.class, OpenConfigGUIMessage::buffer, OpenConfigGUIMessage::new, OpenConfigGUIMessage::handler);
+		McAlecs.addNetworkMessage(OpenConfigGUIMessage.class, OpenConfigGUIMessage::buffer, OpenConfigGUIMessage::new, OpenConfigGUIMessage::handler);
 	}
 }

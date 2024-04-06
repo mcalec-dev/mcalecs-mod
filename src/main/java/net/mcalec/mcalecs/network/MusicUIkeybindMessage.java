@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcalec.mcalecs.procedures.MusicUIkeybindOnKeyReleasedProcedure;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 import java.util.function.Supplier;
 
@@ -62,6 +62,6 @@ public class MusicUIkeybindMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		McalecsMod.addNetworkMessage(MusicUIkeybindMessage.class, MusicUIkeybindMessage::buffer, MusicUIkeybindMessage::new, MusicUIkeybindMessage::handler);
+		McAlecs.addNetworkMessage(MusicUIkeybindMessage.class, MusicUIkeybindMessage::buffer, MusicUIkeybindMessage::new, MusicUIkeybindMessage::handler);
 	}
 }

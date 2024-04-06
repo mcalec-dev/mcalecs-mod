@@ -12,10 +12,10 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcalec.mcalecs.block.entity.AdvancedJukeboxBlockEntity;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 public class McalecsModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, McalecsMod.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, McAlecs.MODID);
 	public static final RegistryObject<BlockEntityType<?>> ADVANCED_JUKEBOX = register("advanced_jukebox", McalecsModBlocks.ADVANCED_JUKEBOX, AdvancedJukeboxBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {

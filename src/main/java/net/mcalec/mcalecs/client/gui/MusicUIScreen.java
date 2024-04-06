@@ -11,7 +11,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcalec.mcalecs.world.inventory.MusicUIMenu;
 import net.mcalec.mcalecs.network.MusicUIButtonMessage;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 import java.util.HashMap;
 
@@ -85,7 +85,7 @@ public class MusicUIScreen extends AbstractContainerScreen<MusicUIMenu> {
 		super.init();
 		button_stop_all_sounds = Button.builder(Component.translatable("gui.mcalecs.music_ui.button_stop_all_sounds"), e -> {
 			if (true) {
-				McalecsMod.PACKET_HANDLER.sendToServer(new MusicUIButtonMessage(0, x, y, z));
+				McAlecs.PACKET_HANDLER.sendToServer(new MusicUIButtonMessage(0, x, y, z));
 				MusicUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 222, this.topPos + 190, 103, 20).build();

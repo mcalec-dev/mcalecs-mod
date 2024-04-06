@@ -47,11 +47,11 @@ import java.util.ArrayList;
 import java.util.AbstractMap;
 
 @Mod("mcalecs")
-public class McalecsMod {
-	public static final Logger LOGGER = LogManager.getLogger(McalecsMod.class);
+public class McAlecs {
+	public static final Logger LOGGER = LogManager.getLogger(McAlecs.class);
 	public static final String MODID = "mcalecs";
 
-	public McalecsMod() {
+	public McAlecs() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		McalecsModSounds.REGISTRY.register(bus);

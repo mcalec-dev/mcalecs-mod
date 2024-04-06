@@ -13,10 +13,10 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 public class McalecsModTabs {
-	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, McalecsMod.MODID);
+	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, McAlecs.MODID);
 	public static final RegistryObject<CreativeModeTab> MC_ALEC = REGISTRY.register("mc_alec",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mcalecs.mc_alec")).icon(() -> new ItemStack(Blocks.ANVIL)).displayItems((parameters, tabData) -> {
 				tabData.accept(McalecsModItems.MC_ALEC_ARMOUR_HELMET.get());

@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcalec.mcalecs.world.inventory.MusicUIMenu;
 import net.mcalec.mcalecs.procedures.MusicUIStopAllSoundsProcedure;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -70,6 +70,6 @@ public class MusicUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		McalecsMod.addNetworkMessage(MusicUIButtonMessage.class, MusicUIButtonMessage::buffer, MusicUIButtonMessage::new, MusicUIButtonMessage::handler);
+		McAlecs.addNetworkMessage(MusicUIButtonMessage.class, MusicUIButtonMessage::buffer, MusicUIButtonMessage::new, MusicUIButtonMessage::handler);
 	}
 }

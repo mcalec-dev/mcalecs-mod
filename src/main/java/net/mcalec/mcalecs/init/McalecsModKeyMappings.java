@@ -17,7 +17,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcalec.mcalecs.network.OpenConfigGUIMessage;
 import net.mcalec.mcalecs.network.MusicUIkeybindMessage;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class McalecsModKeyMappings {
@@ -28,12 +28,12 @@ public class McalecsModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				McalecsMod.PACKET_HANDLER.sendToServer(new MusicUIkeybindMessage(0, 0));
+				McAlecs.PACKET_HANDLER.sendToServer(new MusicUIkeybindMessage(0, 0));
 				MusicUIkeybindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 				MUSIC_U_IKEYBIND_LASTPRESS = System.currentTimeMillis();
 			} else if (isDownOld != isDown && !isDown) {
 				int dt = (int) (System.currentTimeMillis() - MUSIC_U_IKEYBIND_LASTPRESS);
-				McalecsMod.PACKET_HANDLER.sendToServer(new MusicUIkeybindMessage(1, dt));
+				McAlecs.PACKET_HANDLER.sendToServer(new MusicUIkeybindMessage(1, dt));
 				MusicUIkeybindMessage.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
@@ -46,7 +46,7 @@ public class McalecsModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				McalecsMod.PACKET_HANDLER.sendToServer(new OpenConfigGUIMessage(0, 0));
+				McAlecs.PACKET_HANDLER.sendToServer(new OpenConfigGUIMessage(0, 0));
 				OpenConfigGUIMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;

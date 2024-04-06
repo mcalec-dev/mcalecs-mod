@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 public class AdvancedJukeboxParticleProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -29,7 +29,7 @@ public class AdvancedJukeboxParticleProcedure {
 				return false;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "hasRecord1")) == true) {
-			McalecsMod.queueServerWork(80, () -> {
+			McAlecs.queueServerWork(80, () -> {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"execute run particle minecraft:note ~ ~1 ~ 0 0 0 1 1");
@@ -50,7 +50,7 @@ public class AdvancedJukeboxParticleProcedure {
 					return false;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "musicPlaying")) == true) {
-				McalecsMod.queueServerWork(80, () -> {
+				McAlecs.queueServerWork(80, () -> {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"execute run particle minecraft:note ~ ~1 ~ 0 0 0 1 1");

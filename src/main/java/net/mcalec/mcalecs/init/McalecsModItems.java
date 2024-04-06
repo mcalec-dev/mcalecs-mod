@@ -34,10 +34,10 @@ import net.mcalec.mcalecs.item.Groovydominoes52BeeItem;
 import net.mcalec.mcalecs.item.FrizkAllMyFellasItem;
 import net.mcalec.mcalecs.item.EdHelmsHowBadCanIBeItem;
 import net.mcalec.mcalecs.item.C418DragonFishItem;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 public class McalecsModItems {
-	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, McalecsMod.MODID);
+	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, McAlecs.MODID);
 	public static final RegistryObject<Item> ADVANCED_JUKEBOX = block(McalecsModBlocks.ADVANCED_JUKEBOX);
 	public static final RegistryObject<Item> JAMIROQUAI_VIRTUAL_INSANITY = REGISTRY.register("jamiroquai_virtual_insanity", () -> new JamiroquaiVirtualInsanityItem());
 	public static final RegistryObject<Item> MATTHEW_WILDER_BREAK_MY_STRIDE = REGISTRY.register("matthew_wilder_break_my_stride", () -> new MatthewWilderBreakMyStrideItem());

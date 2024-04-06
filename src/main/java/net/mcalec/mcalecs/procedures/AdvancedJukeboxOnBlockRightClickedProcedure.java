@@ -18,7 +18,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcalec.mcalecs.init.McalecsModItems;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 public class AdvancedJukeboxOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -232,7 +232,7 @@ public class AdvancedJukeboxOnBlockRightClickedProcedure {
 						}
 					}.getValue(world, BlockPos.containing(x, y, z), "hasRecord1")) {
 						for (int index0 = 0; index0 < 20; index0++) {
-							McalecsMod.queueServerWork(20, () -> {
+							McAlecs.queueServerWork(20, () -> {
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performPrefixedCommand(
 											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -248,7 +248,7 @@ public class AdvancedJukeboxOnBlockRightClickedProcedure {
 						}
 					}.getValue(world, BlockPos.containing(x, y, z), "hasRecord2")) {
 						for (int index1 = 0; index1 < 20; index1++) {
-							McalecsMod.queueServerWork(20, () -> {
+							McAlecs.queueServerWork(20, () -> {
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performPrefixedCommand(
 											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),

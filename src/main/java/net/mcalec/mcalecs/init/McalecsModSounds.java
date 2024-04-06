@@ -11,10 +11,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 public class McalecsModSounds {
-	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, McalecsMod.MODID);
+	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, McAlecs.MODID);
 	public static final RegistryObject<SoundEvent> BOYKISSER_MEOW = REGISTRY.register("boykisser_meow", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mcalecs", "boykisser_meow")));
 	public static final RegistryObject<SoundEvent> C418_DRAGON_FISH = REGISTRY.register("c418_dragon_fish", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mcalecs", "c418_dragon_fish")));
 	public static final RegistryObject<SoundEvent> FRIZK_ALL_MY_FELLAS = REGISTRY.register("frizk_all_my_fellas", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mcalecs", "frizk_all_my_fellas")));

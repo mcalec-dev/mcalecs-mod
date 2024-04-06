@@ -53,8 +53,6 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
             property 'forge.enabledGameTestNamespaces', 'mcalecs'
             
-            args '--nogui'
-            
             mods {
                 "${mod_id}" {
                     source sourceSets.main
@@ -164,10 +162,10 @@ dependencies {
     compileOnly(fg.deobf("mezz.jei:jei-${minecraftVersion}-common-api:${jeiVersion}")) // Just Enough Items (Compile Common API)
     compileOnly(fg.deobf("mezz.jei:jei-${minecraftVersion}-forge-api:${jeiVersion}")) // Just Enough Items (Compile Forge API)
     implementation fg.deobf("dev.architectury:architectury-forge:${archVersion}") // Architectury API
-    //runtimeOnly(fg.deobf("mezz.jei:jei-${minecraftVersion}-forge:${jeiVersion}")) // Just Enough Items (Forge Runtime JEI)
+    runtimeOnly(fg.deobf("mezz.jei:jei-${minecraftVersion}-forge:${jeiVersion}")) // Just Enough Items (Forge Runtime JEI)
 
     // Shedaniel Maven
-    implementation fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${reiVersion}") // Roughly Enough Items
+    //implementation fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${reiVersion}") // Roughly Enough Items
     implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:${clothVersion}") // Cloth Config API
     
 }

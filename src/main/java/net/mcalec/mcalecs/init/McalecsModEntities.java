@@ -20,11 +20,11 @@ import net.mcalec.mcalecs.entity.McalecsVilagerEntity;
 import net.mcalec.mcalecs.entity.McAlecPersonEntity;
 import net.mcalec.mcalecs.entity.BoykisserMaidEntity;
 import net.mcalec.mcalecs.entity.BoykisserEntity;
-import net.mcalec.mcalecs.McalecsMod;
+import net.mcalec.mcalecs.McAlecs;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class McalecsModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, McalecsMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, McAlecs.MODID);
 	public static final RegistryObject<EntityType<McalecsVilagerEntity>> VILLAGER = register("villager",
 			EntityType.Builder.<McalecsVilagerEntity>of(McalecsVilagerEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(McalecsVilagerEntity::new)
 
