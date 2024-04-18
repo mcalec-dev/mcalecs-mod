@@ -1,5 +1,5 @@
 ### This mod uses Forge 47.2.0+ _(Forge 1.20.1)_
-### We test on latest Forge versions
+### We test on the latest Forge versions
 This mod offers a variety of music discs and new blocks.
 
 A couple of things this mod adds:
@@ -7,9 +7,9 @@ A couple of things this mod adds:
 An Advanced Jukebox for playing custom discs
 - Custom Music Discs.
 - Entities:
- -- McAlec (me)
- -- TESTIFICATE (>1.9 snapshots Villager) 
- -- Boykisser (it's overrated, I know)
+- McAlec (me)
+- TESTIFICATE (>1.9 snapshots Villager) 
+- Boykisser (it's overrated, I know)
 - Structures (soon).
 - Biomes (2 currently).
 - A semi-proper "MusicUI" for playing different sounds in Minecraft.
