@@ -41,11 +41,12 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', 'mcalecs'
             
             mods {
-                "${mod_id}" {
+                "${modId}" {
                     source sourceSets.main
                 }
             }
         }
+
         server {
 			workingDirectory project.file('run-server')
 			
@@ -54,11 +55,12 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', 'mcalecs'
             
             mods {
-                "${mod_id}" {
+                "${modId}" {
                     source sourceSets.main
                 }
             }
         }
+
         gameTestServer {
         	workingDirectory project.file('run-server')
         	
@@ -67,11 +69,12 @@ minecraft {
         	property 'forge.enabledGameTestNamespaces', 'mcalecs'
         	
         	mods {
-                "${mod_id}" {
+                "${modId}" {
                     source sourceSets.main
                 }
             }
         }
+
         data {
         	property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
@@ -80,7 +83,7 @@ minecraft {
             args '--mod', 'mcalecs', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
 			mods {
-                "${mod_id}" {
+                "${modId}" {
                     source sourceSets.main
                 }
             }
